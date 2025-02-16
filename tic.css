@@ -6,26 +6,29 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    display: fle;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(45deg, #4e73df, #1f3a7e); /* Gradient background */
     color: white;
+    flex-direction: column; /* Ensures content stacks vertically on smaller screens */
 }
-header h1{
+
+header h1 {
     color: #fff;
+    margin-bottom: 20px;
 }
+
 .game-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 390px;
-    min-width: 390px;
-    position: relative;
-    left: 580px;
+    max-width: 500px; /* Maximum width for larger screens */
+    width: 90%; /* For responsive resizing */
+    margin: 0 auto; /* Centers the container */
 }
 
 h1 {
@@ -37,16 +40,15 @@ h1 {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr); /* Makes cells flexible */
+    grid-template-rows: repeat(3, 1fr);
     gap: 5px;
     margin-bottom: 20px;
-    justify-content: center;
+    justify-items: center; /* Ensures cells are centered within the grid */
+    align-items: center; /* Centers content within each cell */
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
     background-color: #333;
     display: flex;
     align-items: center;
@@ -56,6 +58,8 @@ h1 {
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.2s ease;
+    width: 100px; /* Ensure width is defined */
+    height: 100px; /* Ensure height is defined */
 }
 
 .cell:hover {
@@ -77,6 +81,7 @@ button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 .scoreboard {
     margin-bottom: 20px;
     font-size: 1.2rem;
@@ -86,9 +91,8 @@ button:hover {
     background: navy;
     border-radius: 10px;
     padding: 20px;
-    width: 20vw;
-    position: relative;
-    left: 600px;
+    width: 100%; /* Make the scoreboard full-width on smaller screens */
+    max-width: 500px; /* Limit width on larger screens */
 }
 
 .scoreboard p {
@@ -105,5 +109,43 @@ button:hover {
     button {
         font-size: 1rem;
         padding: 10px 20px;
+    }
+
+    .game-container {
+        padding: 15px;
+        width: 90%; /* Game container becomes flexible */
+    }
+
+    .scoreboard {
+        width: 90%; /* Scoreboard takes more space on smaller screens */
+        max-width: none; /* Removes the max-width restriction */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .game-board {
+        grid-template-columns: repeat(3, 70px); /* Further reduce grid size on very small screens */
+        grid-template-rows: repeat(3, 70px);
+    }
+
+    .cell {
+        font-size: 1.5rem; /* Smaller font size for the cells */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px; /* Smaller button size */
+    }
+
+    .scoreboard {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Further reduce title font size */
     }
 }
