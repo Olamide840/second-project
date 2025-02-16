@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header style="border: 10px solid transparent;background-color: black;color: white;margin-top: -130px;">CUBBES</header>
+</head>
+<body style="text-align: center;margin-top: 150px;font-size: 25px;">
+   <p>Enter a new Username</p>
+   <input type="text" placeholder="Username" id="username"><br>
+   <h3 style="border: 2px solid wheat;;background-color: blue;color: white;padding: 10px;text-align: center;border-radius: 8px;width: 320px;margin-left: 620px;" id="confirm">Confirm</h3>
+<footer style="margin-top: 320px;">
+    <p>copyright 2023 Cubbes</p>
+</footer>
+</body>
+</html>
+<style>
+    input{
+        padding: 12px;
+        width: 300px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+    footer{
+        border: 25px solid transparent;
+        background-color: black;
+        position: fixed;
+        color: white;
+        width: 1520px;
+    }
+</style>
+<script>
+    document.getElementById('confirm').addEventListener('click', function(event){
+        event.preventDefault();
+        var username = document.getElementById('username').value;
+        if (!username){alert('Fill in your new username');return;}
+        window.location.href = 'user.html';
+      });
+        
+</script>

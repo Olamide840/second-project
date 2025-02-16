@@ -1,0 +1,72 @@
+body{
+    font-family: sans-serif;
+}
+.chat-container{
+    width: 400px;
+    height: 600px;
+    border: 2px solid #ccc;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: anime 3s infinite;
+    transition: .5s;
+}
+@media  only screen and (max-width: 768px) {
+    .chat-container{
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+@keyframes anime{
+    0%{
+        border: 2px solid green;
+    }
+    25%{
+        border: 2px solid red;
+    }
+    50%{
+        border: 2px solid yellow;
+    }
+    75%{
+        border: 2px solid blueviolet;
+    }
+    100%{
+        border: 2px solid blue;
+    }
+}
+
+.chat-header{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 3px solid #ccc;
+}
+.chat-messages{
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100% - 200px);
+}
+.chat-input{
+    padding: 20px;
+    
+}
+#message-input{
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#send-button{
+    width: 20%;
+    height: 40px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#send-button:hover{
+    background-color: #3e8e41;
+}

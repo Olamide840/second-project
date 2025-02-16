@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header style="border: 10px solid transparent;background-color: black;color: white;text-align: center;">CUBBES</header>
+</head>
+<body style="text-align: center;font-size: 25px;">
+    <p>Enter your password to Continue</p>
+    <input type="password" style="padding: 14px;width: 300px;border-radius: 8px;border: 1px solid;" id="password" placeholder="password">
+    <h3 style="width: 305px;border-radius: 8px;border: 8px solid transparent;background-color: blue;color: white;text-align: center;padding: 2px;margin-left: 620px;" id="continue">Continue</h3>
+    <button id="logout-btn">Logout</button>
+    <footer>
+        <p style="margin-top: 350px;text-align: center;border: 30px solid transparent;color: white;background-color: black;position: fixed;width: 1520px;">copyright 2023 Cubbes</p>
+          </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById('continue').addEventListener('click', function(event){
+event.preventDefault();
+var password = document.getElementById('password').value;
+if (!password){alert('Fill in your password!');return;}
+if(!/(?=.*[a-z])(?=.*[0-9]).{8,}/.test(password)){alert('Password must be at least 8 characters,contain at least one lowercase letter,one uppercase letter,and one number!');return;}
+else{alert('Credential changed Successfully, Kindly Logout and check-in after a few minutes with your new credentials.');return;} 
+window.location.href = 'homepage.html';
+const logoutBtn = document.getElementById('logout-btn');
+    logoutBtn.addEventListener('click', () => {
+        const confirmLogout = confirm('Are you sure you want to logout?');
+        if (confirmLogout) {
+            window.location.href = 'login.html';
+        } else {
+            return;
+        }
+    })});
+
+</script>

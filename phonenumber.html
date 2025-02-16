@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header>
+        <p style="border: 10px solid transparent;background-color: black;color: white;text-align: center;">Cubbes</p>
+    </header>
+
+</head>
+<body style="text-align: center;letter-spacing: 2px;
+word-spacing: 10px;
+text-shadow: 10px 10px 15px black;
+font: italic bold 12px/40px Georgia, serif;
+font-variant: small-caps;">
+    <p style="font-size: 30px;">Enter a new phone number</p>
+    <input type="tel" style="padding: 10px;border-radius: 10px;border: 1px solid;width: 300px;" id="phone"><br><br>
+    <button style="border: 10px solid transparent;background-color: blue;color: white;border-radius: 10px;width: 320px;" id="continue">Confirm</button>
+    <footer>
+        <p style="border: 30px solid transparent;background-color: black;color: white;position: fixed;width: 1520px;margin-top: 420px;">copyright 2023 Cubbes</p>
+    </footer>
+</body>
+</html>
+<script>
+    document.getElementById('continue').addEventListener('click', function(event) {event.preventDefault(); 
+        var phone = document.getElementById('phone').value;
+        if (!phone){alert('Fill in your phone number');return;}
+    if (!/^\d{3}\d{3}\d{5}$/.test(phone)) { alert('Invalid mobile number format(XXXXXXXX)');return;}
+    window.location.href = 'user.html';
+    });
+</script>
