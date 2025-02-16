@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: sans-serif;
+margin-left: 200px;
+margin-top: 200px;
+}
+.content{
+    background: black;
+    color: #fff;
+    padding: 20px;
+    height: 50vh;
+    width: 30vw;
+    animation: anime 7s infinite;
+    transition: .8s ease-in-out;
+    border-radius: 50px infinite;
+}
+@keyframes anime {
+    0%{
+        background: red;
+    }
+    25%{
+        background: orange;
+    }
+    50%{
+        background: yellow;
+    }
+    75%{
+        background: green;
+    }
+    100%{
+        background: violet;
+    }
+}
+p{
+    max-width: 500px;
+}

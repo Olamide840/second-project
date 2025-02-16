@@ -1,0 +1,145 @@
+body{
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px grey;
+    font: italic bold 12px/40px Georgia, serif;
+    font-variant: small-caps;
+    background: grey;
+}
+.event{
+    color: #ff7200;
+    font-size: 30px;
+}
+.name{
+    display: flex;
+}
+.blog{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+    .blog{
+        margin-left: 3px;
+        margin-top: 0px;
+    }
+    .srch{
+        padding: 4px;
+    }
+    ul{
+        margin-left: 320px;
+        margin-top: -20px;
+    }
+    ul li{
+        margin-left: 7.5px;
+        margin-top: 12px;
+    }
+}
+.an{
+    border: 10px solid transparent;
+    background-color: #ff7200;
+    color: #fff;
+    border-radius: 5px;
+    cursor: progress;
+}
+.create{
+    display: flex;
+    
+}
+.srch{
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: 2px solid;
+    outline-style: dotted;
+    border: none;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 900px;
+    margin-top: -50px;
+}
+ul li{
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+    
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.body{
+    border:200px solid transparent;
+    background-color: lightslategray;
+    color: #fff;
+    background-size: cover;
+    border-radius: 20px;
+    outline: 3px solid black;
+    outline-style: dotted;
+}
+@media screen and (max-width: 768px){
+    .body{
+        border: 85px solid transparent;
+    }
+    .footer{
+        margin-top: -46px;
+        width: 375px;
+        margin-left: 75px;
+    }
+    .view{
+        margin-left: 11px;
+        width: 33px;
+    }
+}
+.content{
+    font-size: 50px;
+    font-family: cursive;
+}
+.sub{
+    font-size: 20px;
+    font-family: cursive;
+}
+.footer{
+    border: 40px solid transparent;
+    background-color: black;
+    color: #fff;
+    margin-top: -120px;
+    width: 1100px;
+    margin-left: 230px;
+    border-radius: 10px;
+}
+.view{
+     margin-left: 30px;
+     color: black;
+     background-color: white;
+     border: 10px solid transparent;
+     border-radius: 5px;
+     width: 100px;
+     cursor: pointer;
+     transition: .7s ease-in-out;
+     font-weight: 700;
+     outline: 2px solid white;
+     outline-style: dotted;
+}
+.view:hover{
+    background-color: #ff7200;
+    color: #fff;
+    font-weight: 800;
+}
+.b{
+    font-size: 20px;
+}
+
+

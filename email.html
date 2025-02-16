@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header style="border: 10px solid transparent;background-color: black;color: white;margin-top: -130px;">CUBBES</header>
+</head>
+<body style="text-align: center;margin-top: 150px;background-image: url(YES.JPEG);background-size: cover;font-style: italic;">
+   <p style="font-size: 30px;color: white;">Enter your new email address</p><br>
+   <input type="email" style="width: 300px;padding: 15px;border-radius: 10px;border: 1px solid;" placeholder="Email address" id="email">
+   <p style="width: 320px;padding: 5px;border-radius: 10px;border: 10px solid transparent;color: white;background-color: blue;text-align: center;margin-left: 620px;" id="confirm">Confirm</p>  
+   <footer>
+    <p style="margin-top: 380px;border: 30px solid transparent;background-color: black;color: white;position: fixed;width: 1520px;">copyright 2023 Cubbes</p>
+      </footer>
+</body>
+</html>
+<script>
+    document.getElementById('confirm').addEventListener('click', function(event){
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        if (!email){alert('Fill in your new email');return;}
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){alert('Invalid email format');return;}
+        window.location.href = 'user.html';
+      });
+        
+</script>

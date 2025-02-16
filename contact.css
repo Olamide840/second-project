@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #081b29;
+    color: #fff;
+    position: relative;
+    letter-spacing: 1px;
+}
+li{
+    margin: 10px;
+    list-style: disc;
+}
+@media screen and(max-width: 768px) {
+    li{
+        margin: 3.5px;
+    }
+    .as{
+        margin: 3.5px;
+        padding: 7.5px;
+    }
+    .fb{
+        margin: 3.5px;
+        font-size: 16px;
+    }
+    button{
+        margin: 3.5px;
+        padding: 5px;
+        width: 7px;
+        cursor: not-allowed;
+        position: relative;
+        left: 7px;
+    }
+}
+.as{
+    margin: 10px;
+    padding: 20px;
+}
+.fb{
+    position: relative;
+    margin: 10px;
+    font-size: 30px;
+}
+button{
+    position: relative;
+    margin: 10px;
+    padding: 12px;
+    width: 18vw;
+    background: steelblue;
+    color: #fff;
+    font-size: 18px;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 10px;
+    left: 20px;
+    z-index: 2;
+    top: 0px;
+    
+}
+a{
+    color: #fff;
+    font-size: 20px;
+}
+i{
+    color: #fff;
+    font-size: 25px;
+}
+img{
+    height:80vh;
+    width: 30vw;
+    position: fixed;
+    left: 68.8%;
+    top: 100px;
+    border: transparent;
+    border-radius: 10px;
+    animation: image 3s infinite;
+    transition: .5s;
+    background: transparent;
+    cursor: pointer;
+}
+@media screen  and (max-width: 768px){
+    img{
+        height: 33px;
+        width: 12px;
+        position: fixed;
+        left: 21%;
+        top: 33px;
+    }
+}
+img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showLight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 2.5;
+}
+@keyframes image{
+    0%{
+        border-color: red;
+        
+    }
+    50%{
+        transform: translateX(40px);
+        transform: translateY(40px);
+    }
+    100%{
+        border-color: green;
+        
+    }
+
+}
+img:hover{
+    opacity: .1;
+    background: #081b29;
+}
+a:hover{
+    color: steelblue;
+}
+.imgg{
+    position: relative;
+    left: 500px;
+    top: -500px;
+}
+@media screen and (max-width: 768px){
+    .imgg{
+        position: relative;
+        left: 170px;
+        top: -165px;
+    }
+}
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 40px;
+}
+.fa-envelope{
+    color: brown;
+    font-size: 40px;
+}

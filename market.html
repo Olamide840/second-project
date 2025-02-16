@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best eats and restaurants delivered to your door">
+    <meta name="keywords" content="Food, Delivery, Restaurants, Desserts, Best Eats">
+    <title>Best Eats - Delivery</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="market.css">
+</head>
+<body>
+    <header class="eat">
+        <i class='bx bx-menu'></i> 
+        <span>Best</span>
+        <strong>Eats</strong>
+    </header>
+
+    <section class="searching">
+        <i class='bx bx-search'></i>
+        <input type="search" placeholder="Search foods" class="inp">
+    </section>
+    
+    <section class="food">
+        <div class="var">
+            <strong class="strong">The</strong>  
+            <span class="span">Best</span><br>
+            <span class="span">Foods</span>  
+            <strong class="strong">Delivered</strong>
+        </div>
+    </section>
+    <br><br>
+    <div class="main-content">
+        <div class="sun">
+            <div class="bogo">                                           
+                <strong>Sun's Out, BOGO's Out</strong><br>
+                <label>Through 8/26</label><br><br><br>          
+                <button aria-label="Order Now" onclick="addToOrder('Cabbage')">Order Now</button>
+            </div>
+        </div>
+         
+        <div class="restaurant">
+            <div class="daily">
+                <strong>New Restaurants</strong><br>
+                <label>Added Daily</label><br><br><br>
+                <button aria-label="Order Now" onclick="addToOrder('Friendly Pizza')">Order Now</button>
+            </div>
+        </div>    
+
+        <div class="deliver">
+            <div class="desserts">
+                <strong>We Deliver Desserts Too</strong><br>
+                <label for="deliver">Tasty Treats</label><br><br><br>
+                <button aria-label="Order Now" onclick="addToOrder('Desserts')">Order Now</button>
+            </div>
+        </div>
+    </div>
+  
+    <div class="order-container">
+        <h2>Your Order</h2>
+        <ul id="order-items">
+            <li>You haven't selected any Orders</li>  <!-- Default message when no items are added -->
+        </ul>
+        <button class="clear-order" onclick="clearOrder()">Clear Order</button>
+        <button class="submit-order" onclick="submitOrder()">Submit Order</button>
+    </div>
+
+    <div class="container">
+        <h1>Top Rated Menu Items</h1>
+
+        <div class="filters">
+            <div class="filter-group">
+                <p>Filter Type</p>
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="burger">Burger</button>
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+                <button class="filter-btn" data-category="salad">Salads</button>
+                <button class="filter-btn" data-category="chicken">Chicken</button>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <p>Filter Price</p>
+            <button class="price-btn" data-price="$10">$10</button>
+            <button class="price-btn" data-price="$16">$16</button>
+            <button class="price-btn" data-price="$22">$22</button>
+            <button class="price-btn" data-price="$19">$19</button>
+            <button class="price-btn" data-price="$30">$30</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item" data-category="burger" data-price="$16">
+                <img src="back.jpg" alt="Double Cheeseburger">
+                <p>Double Cheeseburger</p>
+                <span class="price">$16</span>
+                <button onclick="addToOrder('Double Cheeseburger')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="burger" data-price="$19">
+                <img src="fresh.jpg" alt="Bacon Cheeseburger">
+                <p>Bacon Cheeseburger</p>
+                <span class="price">$19</span>
+                <button onclick="addToOrder('Bacon Cheeseburger')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="burger" data-price="$10">
+                <img src="Stockfood.jpg" alt="Mushroom Burger">
+                <p>Mushroom Burger</p>
+                <span class="price">$10</span>
+                <button onclick="addToOrder('Mushroom Burger')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="burger" data-price="$22">
+                <img src="sandwich.jpg" alt="Loaded Burger">
+                <p>Loaded Burger</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Loaded Burger')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="burger" data-price="$19">
+                <img src="istock.jpg" alt="Kabob Burger">
+                <p>Kabob Burger</p>
+                <span class="price">$19</span>
+                <button onclick="addToOrder('Kabob Burger')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="pizza" data-price="$22">
+                <img src="ingredient.jpg" alt="Kale Pizza">
+                <p>Kale Pizza</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Kale Pizza')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="pizza" data-price="$30">
+                <img src="slice.jpg" alt="American Pizza">
+                <p>American Pizza</p>
+                <span class="price">$30</span>
+                <button onclick="addToOrder('American Pizza')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="pizza" data-price="$16">
+                <img src="pizza.jpg" alt="Feta & Spinach">
+                <p>Feta & Spinach</p>
+                <span class="price">$16</span>
+                <button onclick="addToOrder('Feta & Spinach')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="pizza" data-price="$22">
+                <img src="photo.jpg" alt="Supreme Pizza">
+                <p>Supreme Pizza</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Supreme Pizza')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="pizza" data-price="$30">
+                <img src="mushroom.jpg" alt="Baked pizza">
+                <p>Baked Pizza</p>
+                <span class="price">$30</span>
+                <button onclick="addToOrder('Baked Pizza')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="salad" data-price="$10">
+                <img src="salad.jpg" alt="Fruit Salad">
+                <p>Fruit Salad</p>
+                <span class="price">$10</span>
+                <button onclick="addToOrder('Fruit Salad')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="salad" data-price="$22">
+                <img src="fruitsalad.jpg" alt="Ceasar Salad">
+                <p>Ceasar Salad</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Ceasar Salad')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="salad" data-price="$16">
+                <img src="recipies.jpg" alt="Refreshment Salad">
+                <p>Refreshment Salad</p>
+                <span class="price">$16</span>
+                <button onclick="addToOrder('Refreshment Salad')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="salad" data-price="$19">
+                <img src="salad2.jpg" alt="Tenders salad">
+                <p>Tenders Salad</p>
+                <span class="price">$19</span>
+                <button onclick="addToOrder('Tenders Salad')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="salad" data-price="$22">
+                <img src="salad3.jpg" alt="Indian Salad">
+                <p>Indian Salad</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Indian Salad')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="chicken" data-price="$30">
+                <img src="roasted.jpg" alt="Roasted Chicken">
+                <p>Roasted Chicken</p>
+                <span class="price">$30</span>
+                <button onclick="addToOrder('Roasted Chicken')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="chicken" data-price="$22">
+                <img src="gold.jpg" alt="Baked">
+                <p>Baked Chicken</p>
+                <span class="price">$22</span>
+                <button onclick="addToOrder('Baked Chicken')">Add to Order(s)+</button>
+            </div><br><br>
+            <div class="menu-item" data-category="chicken" data-price="$30">
+                <img src="cooked.jpg" alt="kabob">
+                <p>Kabob Chicken</p>
+                <span class="price">$30</span>
+                <button onclick="addToOrder('Kabob Chicken')">Add to Order(s)+</button>
+            </div>
+        </div> 
+    </div>
+
+    <script src="market.js"></script>
+</body>
+</html>
+

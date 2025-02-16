@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <p class="sign"><b>Sign Up</b></p>
+    <p class="username">Username</p>
+    <input type="text" required>
+    <p class="email">Email Address</p>
+    <input type="email" required>
+    <p class="phone">Phone Number<select>
+        <option value="+234">(+234) Nigeria</option>
+        <option value="">(+231) Ghana</option>
+        <option value="">(+1) USA</option>
+        <option value="">(+44) UK</option>
+        <option value="">(+86) China</option>
+        <option value="">(+91) India</option>
+        <option value="">(+49) Germany</option>
+        <option value="">(61) Australia</option>
+        <option value="">(+1) Canada</option>
+        <option value="">(+27) South Africa</option>
+        <option value="">(+55) Brazil</option>
+    </select></p>
+    <input type="number" required>
+    <p class="password">Password</p>
+    <input type="password">
+    <p class="confirm">Confirm Password</p>
+    <input type="password"><br>
+    <input type="checkbox" class="check"><label class="show">Show Password</label><br>
+    <br>
+    <button class="submit">SUBMIT</button>
+    <br>
+    <br>
+    <div class="foget">
+        <b><label class="pass">Forgotten Password ?</label> <label class="log">Or Login now.</label></b>
+    </div>
+   </div> 
+</body>
+</html>
+
+<style>
+    body{
+    background-image: url(YES.JPEG);
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+.foget{
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.foget:hover{
+    color: #ffc107;
+}
+.log{
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.log:hover{
+    color: black;
+}
+.main{
+    color: #fff;
+    border: 20px solid transparent;
+    background-color: #ff7200;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 500px;
+    border-radius: 10px;
+    text-indent: 10px;
+    letter-spacing: 3px;
+    text-shadow: 2px 3px red;
+}
+.sign{
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 10px 6px 5px red;
+    transition: .5s ease-in-out;
+}
+.sign:hover{
+    color: #ffc107;
+}
+.submit{
+    border: 10px solid transparent;
+    background-color: darkred;
+    border-radius: 10px;
+    width: 400px;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+.submit:hover{
+    background-color: #ffc107;
+}
+input{
+    padding: 7px;
+    width: 380px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    padding:8px 15px 8px 8px;
+}
+.check{
+    margin-left: -180px;
+    background-color: black;
+}
+.show{
+    margin-left: -180px;
+}
+</style>

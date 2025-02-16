@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="sharp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Management</h1>
+        <div class="order-list">
+            <h2>Order:</h2>
+            <ul id="order-items">
+                <!-- Order items will appear here -->
+            </ul>
+        </div>
+        
+        <div class="buttons">
+            <button onclick="addToOrder('Item 1')">Add Item 1</button>
+            <button onclick="addToOrder('Item 2')">Add Item 2</button>
+            <button onclick="addToOrder('Item 3')">Add Item 3</button>
+        </div>
+        
+        <div class="action-buttons">
+            <button onclick="clearOrder()">Clear Order</button>
+        </div>
+    </div>
+
+    <script src="sharp.js"></script>
+</body>
+</html>

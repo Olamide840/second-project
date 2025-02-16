@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header>BluePay int</header> 
+</head>
+<body style="background-image: url(YES.JPEG);background-size: cover;">
+    <h4 style="color: darkblue;text-decoration: underline;font-size: larger;text-align: right;" class="help">Need Help?</h4><br>
+    <div style="border: 1px solid;background-color: rgb(30, 26, 248);width: 500px;margin: 20px;border-radius: 10px;margin-left: 20px;height: 550px;box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);">
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="color: white;font-size: 40px;margin: 20px;margin-top: -50px;">BLUE PAY</h2>
+        <p style="margin-top: -20px;margin: 20px;color: white;">LOGIN OR <b class="cc"><a href="ola.html" style="text-decoration: none;color: black;">CREATE AN ACCOUNT</a> </b> TO CONTINUE.</p><br>
+        <br>
+        <input type="email" id="email" style="padding: 17px;margin: 20px;border: 1px solid;opacity: 1;font-weight: bolder;transition: opacity 0.3s ease-in-out;width: 410px;border-radius: 10px;" placeholder="Enter Email" required><br>
+        <br>
+        <input type="password" id="password" style="padding: 17px;margin: 20px;margin-top:-20px;border: 1px solid;opacity: 1;font-weight: bolder;transition: opacity 0.3s ease-in-out;width: 410px;border-radius: 10px;" placeholder="Enter Password" required><br>
+        <br>
+        <button id="login" style="border: 10px solid transparent;margin: 20px;background-color: black;border-radius: 10px;margin-top:-30px;text-align: center;color: white;width: 440px;padding: 10px;">Login</button>
+    </header>
+    <footer style="text-align: center;">
+        <p style="color: white;margin-left: 30px;"><b style="color: black;text-decoration: underline;" class="bb">Forgot your password</b> or this is not you ?</p><br>
+        <p style="margin-top: -30px;"><b style="font-size: 20px;color: white;">Sign Out</b></p> 
+        <p style="margin-top: 0px;color: white;">&copy; 2023</p>
+        <p></p>
+    </footer>
+    </div>
+</body>
+</html>
+<style>
+    .help:hover{
+    color: #ff7200;
+        transition: 1s ease;
+        border-radius: 5px;
+    }
+    .cc:hover{
+        background-color: orange;
+        transition: 0.3s ease;
+        border-radius: 5px;
+    }
+    .bb:hover{
+        background-color: orange;
+        border-radius: 4px;
+        transition: 0.3s ease;
+    }
+</style>
+<script>
+    document.getElementById('login').addEventListener('click', function(event){
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if(!email || !password){alert('Please Fill In All Required Fields');return;}
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {alert('Invalid email format');return;}
+        if (password.length < 8 || !/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) { alert('Password must be at least 8 characters, contain at least one lowercase letter, one uppercase letter, and one number!');return;} 
+        else{alert('Login Successful');return;}
+    }
+
+)
+</script>

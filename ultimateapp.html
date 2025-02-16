@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body style="background-size: cover;letter-spacing:1px;
+font: 12px/40px serif;background: #666;">
+    
+    <div class="menu">
+        <i class="fa-solid fa-people-group" style="font-size: 30px;color: #fff;"></i> <label style="color: #fff;font-size: 30px;"><b>UltimateMember</b></label>
+        <br><br>
+        <br>
+        <br>
+        <h1 style="text-align: center;color: #fff;margin-left: -90px;margin-top: -90px;font-size: 30px;font-family: sans-serif;">Login</h1>
+    </div>
+<br>
+<div id="login-form">
+    <form>
+    <div style="text-align: center;" class="papa">
+    <h3 style="margin-left: -420px;margin-top: 150px;color: #fff;font-size: 25px;">Email Address</h3>
+    <input type="text" style="width: 600px;outline: none;" id="email" placeholder="Email Address *">
+    <br>
+    <h3 style="margin-left: -490px;color: #fff;font-size: 25px;">Password</h3>
+    <input type="password" style="width: 600px;outline: none;" id="password" placeholder="Password *">
+    <br>
+    
+<br>
+    <input type="checkbox" style="margin-left: -20px;"><label style="color: #fff;font-size: 25px;">Keep me signed in</label><input type="checkbox" id="show-password1" style="margin-left: 80px;"><label style="color: #fff;font-size: 25px;">Show Password</label><br>
+    <br>
+    <button id="Login" style="border: 10px solid transparent;padding: 3px;width: 280px;color: #fff;margin-left: 0px;border-radius: 5px;" class="login">Login</button><button style="border: 10px solid transparent;background-color: #000080;width: 300px;padding: 4px;margin-left: 50px;margin-top: -60px;border-radius: 5px;color: #fff;" id="register-btn" class="register">Register</button>
+    </form>
+</div>
+<div id="register-form" style="color: #fff;display: none;" class="fail">
+    <form>
+        <h2>Register</h2>
+        <label for="Username"><b>Username</b></label><br><br><input type="text" style="width: 600px;" placeholder="Enter your Username" required><b><br>
+            <br><label for="email">Email Address</b></label><br><br><input type="email" style="width: 600px" placeholder="Enter your Email Address" required><br>
+        <br>
+        <label for="phone"><b>Phone Number</b></label>
+        <select name="phone" id="">
+            <option value="+234">(+234) Nigeria</option>
+            <option value="">(+231) Ghana</option>
+            <option value="">(+1) USA</option>
+            <option value="">(+44) UK</option>
+            <option value="">(+86) China</option>
+            <option value="">(+91) India</option>
+            <option value="">(+49) Germany</option>
+            <option value="">(61) Australia</option>
+            <option value="">(+1) Canada</option>
+            <option value="">(+27) South Africa</option>
+            <option value="">(+55) Brazil</option>
+        </select><br>
+        <br>
+        <input type="number" style="padding: 9px;width: 600px;outline: none;" placeholder="Enter your Phone Number" required><br>
+        <br>
+        <label><b>Password</b></label><br>
+        <br>
+        <input type="password" style="width: 600px;outline: none;" id="password1" placeholder="Enter your Password here" required><br>
+        <br>
+        <input type="checkbox" id="show-password"><label>Show Password</label><br>
+        <br>
+<button style="border: 10px solid transparent;background-color: dodgerblue;border-radius: 5px;text-align: center;width: 620px;cursor: pointer;"><a href="thankyou.html" style="color: #fff;text-decoration: none;">Register</a></button>
+    </form>
+
+</div>
+    <p class="pass"><b>Forgot your password?</b></p> 
+</div>
+
+
+</body>
+</html>
+<style>
+    .menu{
+        width: 1450px;
+        height: 70px;
+        float: left;
+        border: 80px solid transparent;
+        background-color: navy;
+        margin-top: -67px;
+        margin-left: -8px;
+        justify-content: space-between;
+        position: fixed;
+    }
+    @media screen and (max-width: 768px) {
+        .menu{
+            width: 485px;
+            height: 25px;
+            border: 29px solid transparent;
+            margin-top: -23px;
+            margin-left: -2px;
+        }
+        ul{
+            margin-left: 265px;
+        }
+        ul li{
+            margin-left: 34px;
+            margin: -24px;
+        }
+    }
+    ul{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 780px;
+    }
+    ul li{
+        list-style: none;
+        margin-left: 100px;
+        margin-top: -77px;
+        font-size: 15px;
+    }
+    .login{
+        transition: ease-in-out 0.8s;
+        background-color: navy;
+    }
+    .login:hover{
+        animation: animate 1s linear infinite;
+    }
+
+    .register{
+        transition: ease-in-out 0.8s;
+    }
+    .register:hover{
+        animation: animate 1s linear infinite;
+    }
+    @keyframes animate {
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+    ul li a{
+        transition: 0.4s ease-in-out;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #fff;
+        margin-left: -70px;
+        
+    }
+    ul li a:hover{
+        color: #ff7200;
+    }
+    .pass{
+        transition: 0.4s ease-out;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+.pass:hover{
+    color: #ff7200;
+}
+.papa{
+    margin-top: 200px;
+    color: #fff;
+}
+.ink{
+    transition: 0.4s ease-in-out;
+}
+.ink:hover{
+    color: #ff7200;
+}
+input{
+    outline: none;
+}
+.fail{
+    font-size: 20px;
+}
+input{
+    border-radius: 5px;
+    padding: 13.5px;
+    border: none;
+    color: red;
+}
+
+input::placeholder{
+    color: red;
+    font-weight: bolder;
+}
+</style>
+<script>
+document.getElementById('Login').addEventListener('click', function(event){
+    event.preventDefault();
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    
+    if(!email, !password){alert('Please kindly fill in your credentials correctly.');return;}
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {alert('Invalid email format');return;}
+    if (password.length < 8 || !/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) { alert('Password must be at least 8 characters, contain at least one lowercase letter, one uppercase letter, and one number!');return;} 
+    else{alert('Login Successful.')}
+    window.location.href = 'ultimate.html';
+});
+document.getElementById('show-password1').addEventListener('change', function(event) { var passwordField = document.getElementById('password'); if (this.checked) {passwordField.type = 'text';} else {passwordField.type = 'password';}});
+document.getElementById('show-password').addEventListener('change', function(event) { var passwordField = document.getElementById('password1'); if (this.checked) {passwordField.type = 'text';} else {passwordField.type = 'password';}});
+ 
+
+document.getElementById('register-btn').addEventListener('click', function(){
+    event.preventDefault();
+    document.getElementById('register-form').style.display = 'block';
+});
+
+
+</script>

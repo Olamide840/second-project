@@ -1,0 +1,156 @@
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li id="logout-btn">Logout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Cubbes</h1>
+            <p>A community for creative minds</p>
+            <button>Join Us</button>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-palette"></i>
+                    <h3>Showcase Artwork</h3>
+                    <p>Share your creations with the community</p>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <h3>Ispiring Stories</h3>
+                    <p>Read and share Stories of creativity</p>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    <h3>Connect with others</h3>
+                    <p>Join a community of like-minded individuals</p>
+                </li>
+            </ul> 
+
+        </section>
+    </main>
+    <nav>
+        <a href="">Features</a>
+    </nav>
+    <header>
+        <h1>Welcome to Cubbes</h1>
+        <p>This is the hero section.</p>
+    </header>
+<footer>
+    <p>copyright 2023 Cubbes</p>
+</footer>
+</body>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+    header nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul li {
+        margin-right: 20px;
+    }
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+    .hero {
+        background-image: linear-gradient(to bottom, #333, #555);
+        color: #fff;
+        padding: 2em;
+        text-align: center;
+    }
+    .hero button{
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 1em 2em;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .features li {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: calc(33.33% - 20px);    
+        }
+        .features i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        nav.open {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav.open ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav.open li {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        #features {
+            margin-top: 150px;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        li{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+</style>
+<script>
+    const logoutBtn = document.getElementById('logout-btn');
+    logoutBtn.addEventListener('click', () => {
+        const confirmLogout = confirm('Are you sure you want to logout?');
+        if (confirmLogout) {
+            window.location.href = 'login.html';
+        } else {
+            return;
+        }
+    });
+</script>

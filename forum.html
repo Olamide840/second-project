@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <div class="forum-container">
+        <h1>Welcome to the Forum Section to have a great Time of discussion With the group Members.</h1><i class="fa-solid fa-people-group"></i>
+        <form id="post-form" name="form">
+            <textarea id="post-content" placeholder="Write a post or a Suggestion..."></textarea><br><br>
+            <button id="post-button">Post</button>
+        </form>
+        <div id="post-container">
+            
+        </div>
+    </div>
+
+    <div class="image">
+        <h1>Communicate with Images.</h1>
+    <input type="file" id="image-upload" accept="image/*"><br><br>
+    <button id="submit-image-button" class="submit">Submit Image</button>
+    <div id="image-preview"></div>
+    </div>
+
+    <div id="comment-container">
+        <h1>Welcome to the Comment Section.</h1>
+        <div class="comment">
+            <p></p>
+            <button class="reply-button">Reply to a Comment</button>
+            <div class="reply-form" style="display: none;">
+                <textarea class="area" id="comment-text" placeholder="Write a comment..."></textarea>
+                <button class="submit-reply-button">Submit your Reply</button>
+                <div id="notification-message"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="forum.js"></script>
+</html>

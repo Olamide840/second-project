@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="ultimate.css">
+    
+</head>
+<body>
+
+    <div class="dashboard">
+    <div class="menu">
+        <i class="fa-solid fa-people-group" style="color: #fff;font-size: 30px;"></i> <label style="color: #fff;font-size: 30px;font-family: sans-serif;"><b>UltimateMember</b></label>
+        <ul>
+            <li><a href="portfolio.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="members.html">Members Directories</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul><br><br>
+        <br>
+        <br>
+        <h1 style="text-align: center;color: #fff;margin-left: -90px;margin-top: -20px;font-size: 30px;font-family: sans-serif;">Personal Account Dashboard</h1>
+    </div>
+    <div class="dash">
+    
+        <h1>Welcome, <span id="use"></span>!</h1>
+        <h2>Recent Activities.</h2>
+        <ul id="activity-list" class="ul">
+
+        </ul>
+        <h2>Stats:</h2>
+        <ul id="stats-list">
+        <li>Total Posts: <span id="total-posts">0</span></li>
+        <li>Total Users: <span id="total-users">0</span></li>
+        <li>Active Now: <span id="total-active">0</span></li>
+        </ul>
+    </div> 
+    <br><br>
+    <div class="ddd">
+    <button id="light">Light Mode</button>
+    <button id="dark">Dark Mode</button>
+    </div>
+    <div class="das">
+    <img src="happy.jpg" alt="">
+    <h2 class="sub">Welcome Dear User,</h2>
+    <div class="general">
+        <i class="fa-solid fa-user" id="fa" name="acu"></i>    <label class="label" onclick="showSection('account')" id="acc" name="acu" for="acu">Account</label>
+        <br>
+        <br>
+        <i class="fa-solid fa-key" id="fa" name="cha"></i> <label class="label" onclick="showSection('change-passsword')" name="cha" for="cha">Change Password</label>
+        <br>
+        <br>
+        <i class="fa-solid fa-lock" id="fa" name="pri"></i> <label class="label" onclick="showSection('privacy')" name="pri" for="pri">Privacy</label>
+        <br>
+        <br>
+        <i class="fa-solid fa-delete-left" id="fa" name="del"></i> <label class="label" onclick="showSection('delete-account')" name="del" for="del">Delete Account</label>
+        <br>
+        <br>
+        <i class="fas fa-palette" id="fa" name="the"></i> <label class="label" onclick="showSection('theme')" name="the" for="the">Nearby Friends</label>
+      </div>
+      
+
+      <div class="main-content">
+        <div class="section" id="account">
+            <h2>Update Account</h2><br>
+            
+             <form>
+                <p for="first-name" name="fname">First Name</p>
+                <br>
+                <input type="text" id="first-name" name="fname" placeholder="Enter your First name" maxlength="15" required><br><br>
+                <label for="last-name" name="lname">Last Name</label><br><br>
+                <input type="text" name="lname" id="last-name" placeholder="Enter your Last Name" maxlength="15" required><br><br>
+                <label for="email" name="ëmail">Email</label><br><br>
+                <input type="email" name="email" placeholder="Enter your Email" required><br><br>
+                <label for="phone-number">Phone Number</label><br><br>
+                <input type="number"  placeholder="Enter a new phone number"><br><br>
+                <button type="submit" class="btn1">Update Account</button>
+
+            </form>
+        </div>
+
+        <div class="section" id="change-passsword" style="display: none;">
+            <h2>Change Password</h2><br>
+            <form>
+                <p for="old-password">Old Password:</p><br>
+                <input type="password" id="old-password" placeholder="Enter your Old Password" maxlength="15" required><br><br>
+                <label for="new-password">New Password:</label><br><br>
+                <input type="password" id="new-password" placeholder="Enter New Password" maxlength="15" required><br><br>
+                <button type="submit">Change Password</button> 
+            </form>
+        </div>
+
+        <div class="section" id="privacy" style="display: none;">
+            <form>
+            <h2>Privacy Settings</h2><br>
+            <li>Channel Subscription</li>
+            <br>
+            <p>Enter your Email below to subscribe to our Newsletter Subscription:</p><br>
+            <input type="email" placeholder="Enter your Email" required><br><br>
+            <button type="submit">Subscribe</button><br><br>
+            </form>
+
+            <form>
+            <li>Account Locking</li><br>
+            <p>Choose who can view your profile or Add you as a Team Member.</p><br>
+                <select name="privacy" id="ss" class="ss">
+                    <option value="#">Friends of friends</option>
+                    <option value="#">Family</option>
+                    <option value="#">People I Know</option>
+                    <option value="#">Nobody</option>
+                </select><br><br>
+                <button type="submit">Update</button><br><br>
+            </form>
+            <p><li>Two-Step Verification</li></p><br>
+            <p>Enter your Password below to enable Two-Step Verification:</p><br>
+            <input type="password" placeholder="Enter Password" required><br><br>
+            <button type="submit">Enable</button><br><br>
+             <form>
+            <li>Login Alerts</li><br>
+                <p>Click below to view your Login Alerts and kindly secure your Account if there is an Unrecognized Logins.</p><br>
+                <button>View Login Alerts</button><br><br>
+             </form>
+             <li><label for="dp">Change Profile Picture</label></li>
+             <input type="file" class="goo">
+             <button type="submit" class="yee">Change Profile Picture</button>
+        </div>
+
+        <div class="section" id="delete-account" style="display: none;">
+            <h1 class="fo">Delete Account</h1><br> 
+            <p class="fo">Are you Sure you want to delete your Account ?</p><br>
+            <button class="btn" type="submit">Yes</button><button class="btn" type="submit">No</button>
+        </div>
+        
+        <div class="section" id="theme" style="display: none;">
+            <h2>Find your Nearby Friends and have some Great times Together.</h2><br>
+            <p>Enter a Friend's Username to Connect Together Now.</p><br>
+            <input type="search" placeholder="Enter a Friend Username" value="@" maxlength="12"><br><br>
+            <button class="bb" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="ultimate.js"></script>
+</body>
+</html>
+
+    

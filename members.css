@@ -1,0 +1,43 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+@media  screen and (max-width: 768px) {
+    img{
+        width: 2.5%;
+        height: 6%;
+    }
+    .member{
+        padding: 5px;
+    }
+    input{
+        padding: 5px;
+        width: 15%;
+    }
+}
+#member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.member{
+    padding: 10px;
+    border-bottom: 2px solid #3e8341;
+}
+img{
+    width: 5%;
+    height: 10%;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+.member-info{
+    display: inline-block;
+    vertical-align: top;
+}
+input{
+    outline-color: #3e8341;
+    padding: 10px;
+    width: 30%;
+}
+.ff{ 
+    color: #3e8341;
+}

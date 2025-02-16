@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.main{
+    border: 20px solid transparent;
+    background-color: black;
+    color: #fff;
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 520px;
+    margin-top: 230px;
+    width: 400px;
+    height: 40vh;
+    box-shadow: 0 .5rem 100rem 0 rgba(300, 300, 300, 300);
+    padding: 30px 30px 20px 30px;
+    font-size: 25px;
+    transition: .5s ease-in-out;
+    animation: move 5s infinite;
+}
+.main:hover{
+    transform: translateX(10px);
+    transform: translateY(10px);
+    background: #d11149;
+}
+@keyframes move {
+    50% {
+        background-image: linear-gradient(to right,red,yellow,green,blue,indigo);
+        transition: 5s ease-in-out;
+    }
+}
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    padding: 0 10px;
+    width: 450px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: -30px;
+    position: fixed;
+}
+input::placeholder{
+    color: #fff;
+    transition: .5s;
+    top: -10px;
+}
+input:hover::placeholder{
+    color: #fff;
+}
+.class {
+    margin-bottom: 20px;
+}
+.class input:focus::placeholder,
+.class input:not(:placeholder-shown) {
+    transform: translateY(-15px);
+    font-size: 18px;
+    color: #fff;
+}
+input:focus{
+    outline: none;
+    border-bottom: 1px solid #ff0000;
+}
+.login{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -10px;
+}
+.submit{
+    border: 10px solid transparent;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: -60px;
+    font-weight: 700;
+}
+.submit::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(to right, #ff0000 #0000ff);
+    border-image-slice: 1;
+    animation: animate 2s infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+   100% {
+    transform: rotate(360deg);
+    background: #d11149;
+    }
+}
