@@ -42,7 +42,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Makes cells flexible */
     grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
+    gap: 15px; /* Increased gap for better spacing */
     margin-bottom: 20px;
     justify-items: center; /* Ensures cells are centered within the grid */
     align-items: center; /* Centers content within each cell */
@@ -102,8 +102,9 @@ button:hover {
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
     .game-board {
-        grid-template-columns: repeat(3, 80px);
-        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px; /* Adjust gap for better spacing on mobile */
     }
 
     button {
@@ -130,6 +131,7 @@ button:hover {
     .game-board {
         grid-template-columns: repeat(3, 70px); /* Further reduce grid size on very small screens */
         grid-template-rows: repeat(3, 70px);
+        gap: 5px; /* Adjust gap even further for tiny screens */
     }
 
     .cell {
