@@ -1,20 +1,30 @@
-body{
+body {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Add a background for the page */
 }
-.eat{
+
+.eat {
     font-size: 30px;
     color: #ff4747;
+    text-align: center;
+    margin-top: 20px;
 }
-.payment{
+
+.payment {
     background: #ff4747;
     color: #fff;
-    width: 33%;
-    margin: 5px;
+    width: 50%; /* Adjusted width to be more responsive */
+    margin: 20px auto;
     padding: 40px;
     border-radius: 20px;
     font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-button{
+
+button {
     padding: 15px 20px;
     background: #4caf50;
     color: #fff;
@@ -24,18 +34,59 @@ button{
     letter-spacing: 1px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
+    font-size: 16px;
+    width: 100%; /* Make the button full width */
 }
-button:hover{
+
+button:hover {
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 10px #2196f3;
-
 }
-input{
+
+input, textarea {
     padding: 10px;
     border: none;
-    width: 95%;
+    width: 100%; /* Make input fields full width */
     border-radius: 5px;
+    margin-bottom: 15px; /* Add some space below the inputs */
 }
-textarea{
-    width: 97%;
+
+textarea {
+    height: 150px; /* Set a fixed height for text areas */
+    resize: vertical; /* Allow the user to resize vertically */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .payment {
+        width: 80%; /* Increase the width for mobile screens */
+        padding: 30px; /* Reduce padding */
+    }
+
+    button {
+        font-size: 14px; /* Make the button text slightly smaller */
+    }
+
+    input, textarea {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment {
+        width: 90%; /* Further increase the width on smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .eat {
+        font-size: 24px; /* Smaller text for mobile screens */
+    }
+
+    button {
+        font-size: 12px; /* Further decrease button font size */
+    }
+
+    input, textarea {
+        padding: 6px;
+    }
 }
