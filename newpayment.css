@@ -52,38 +52,38 @@ input, textarea {
 }
 
 textarea {
-    height: 150px; /* Set a fixed height for text areas */
-    resize: vertical; /* Allow the user to resize vertically */
+    height: 80px; 
+    resize: vertical; 
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
     .payment {
-        width: 80%; /* Increase the width for mobile screens */
-        padding: 30px; /* Reduce padding */
+        width: 80%; 
+        padding: 30px; 
     }
 
     button {
-        font-size: 14px; /* Make the button text slightly smaller */
+        font-size: 14px; 
     }
 
     input, textarea {
-        padding: 8px;
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .payment {
-        width: 90%; /* Further increase the width on smaller screens */
-        padding: 20px; /* Reduce padding */
+        width: 90%; 
+        padding: 20px; 
     }
 
     .eat {
-        font-size: 24px; /* Smaller text for mobile screens */
+        font-size: 24px; 
     }
 
     button {
-        font-size: 12px; /* Further decrease button font size */
+        font-size: 12px; 
     }
 
     input, textarea {
