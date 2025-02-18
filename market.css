@@ -279,6 +279,9 @@ h1 {
 
 /* Media Query for Smaller Screens (Mobile) */
 @media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
     .searching {
         width: 65%;
         position: relative;
