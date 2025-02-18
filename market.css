@@ -85,7 +85,7 @@ body {
 button {
     background: #4caf50;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     width: 40%;
     cursor: pointer;
@@ -174,7 +174,7 @@ h1 {
     background: white;
     color: #ff6600;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 15px;
     transition: all 0.3s;
 }
@@ -202,7 +202,7 @@ h1 {
 .menu-item {
     margin: 0 0 auto;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 20px 10px;
     box-shadow: rgba(0, 0, 0, 0.8);
     scroll-snap-align: start;
@@ -299,7 +299,7 @@ h1 {
     }
 
     .sun, .restaurant, .deliver {
-        width: 100%;
+        width: 60%;
         max-width: 100%;
     }
 
