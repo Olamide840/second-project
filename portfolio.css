@@ -67,10 +67,6 @@ a:hover {
     transform: translateY(10px);
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #00abf0;
-}
 
 /* Home Section */
 .home {
@@ -315,8 +311,6 @@ a:hover {
     }
     .home-content .btn-box {
         width: 100%;
-        flex-direction: column;
-        gap: 10px;
     }
     .home-sci {
         width: 120px;
@@ -337,8 +331,6 @@ a:hover {
     }
     .home-content .btn-box {
         width: 100%;
-        flex-direction: column;
-        gap: 10px;
     }
     .home-sci {
         width: 100px;
