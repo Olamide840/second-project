@@ -281,12 +281,14 @@ h1 {
 @media (max-width: 768px) {
     .searching {
         width: 80%;
+        position: relative;
+        left: -50px;
     }
 
     .food {
         font-size: 25px;
         height: 40vh;
-        width: 90%;
+        width: 100%;
     }
 
     .menu-grid {
@@ -299,12 +301,12 @@ h1 {
     }
 
     .sun, .restaurant, .deliver {
-        width: 60%;
+        width: 70%;
         max-width: 100%;
     }
 
     button {
-        width: 100%;
+        width: 80%;
     }
 
     .container {
