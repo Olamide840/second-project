@@ -283,12 +283,12 @@ h1 {
         width: 65%;
         position: relative;
         left: 75px;
-        top: -10px;
+        top: -20px;
     }
     .main-content{
-        width: 120%;
+        width: 135%;
         position: relative;
-        left: -15px;
+        left: -17px;
     }
     .main-content button{
         width: 50%;
