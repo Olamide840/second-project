@@ -6,181 +6,208 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body style="background-size: cover;letter-spacing:1px;
-font: 12px/40px serif;background: #666;">
-    
+<body style="background-size: cover;letter-spacing:1px; font: 12px/40px serif;background: #666; margin: 0;">
+
+    <!-- Menu -->
     <div class="menu">
-        <i class="fa-solid fa-people-group" style="font-size: 30px;color: #fff;"></i> <label style="color: #fff;font-size: 30px;"><b>UltimateMember</b></label>
+        <i class="fa-solid fa-people-group" style="font-size: 30px;color: #fff;"></i> 
+        <label style="color: #fff;font-size: 30px;"><b>UltimateMember</b></label>
         <br><br>
-        <br>
-        <br>
-        <h1 style="text-align: center;color: #fff;margin-left: -90px;margin-top: -90px;font-size: 30px;font-family: sans-serif;">Login</h1>
+        <h1 class="login-title">Login</h1>
     </div>
-<br>
-<div id="login-form">
-    <form>
-    <div style="text-align: center;" class="papa">
-    <h3 style="margin-left: -420px;margin-top: 150px;color: #fff;font-size: 25px;">Email Address</h3>
-    <input type="text" style="width: 600px;outline: none;" id="email" placeholder="Email Address *">
-    <br>
-    <h3 style="margin-left: -490px;color: #fff;font-size: 25px;">Password</h3>
-    <input type="password" style="width: 600px;outline: none;" id="password" placeholder="Password *">
-    <br>
-    
-<br>
-    <input type="checkbox" style="margin-left: -20px;"><label style="color: #fff;font-size: 25px;">Keep me signed in</label><input type="checkbox" id="show-password1" style="margin-left: 80px;"><label style="color: #fff;font-size: 25px;">Show Password</label><br>
-    <br>
-    <button id="Login" style="border: 10px solid transparent;padding: 3px;width: 280px;color: #fff;margin-left: 0px;border-radius: 5px;" class="login">Login</button><button style="border: 10px solid transparent;background-color: #000080;width: 300px;padding: 4px;margin-left: 50px;margin-top: -60px;border-radius: 5px;color: #fff;" id="register-btn" class="register">Register</button>
-    </form>
-</div>
-<div id="register-form" style="color: #fff;display: none;" class="fail">
-    <form>
-        <h2>Register</h2>
-        <label for="Username"><b>Username</b></label><br><br><input type="text" style="width: 600px;" placeholder="Enter your Username" required><b><br>
-            <br><label for="email">Email Address</b></label><br><br><input type="email" style="width: 600px" placeholder="Enter your Email Address" required><br>
-        <br>
-        <label for="phone"><b>Phone Number</b></label>
-        <select name="phone" id="">
-            <option value="+234">(+234) Nigeria</option>
-            <option value="">(+231) Ghana</option>
-            <option value="">(+1) USA</option>
-            <option value="">(+44) UK</option>
-            <option value="">(+86) China</option>
-            <option value="">(+91) India</option>
-            <option value="">(+49) Germany</option>
-            <option value="">(61) Australia</option>
-            <option value="">(+1) Canada</option>
-            <option value="">(+27) South Africa</option>
-            <option value="">(+55) Brazil</option>
-        </select><br>
-        <br>
-        <input type="number" style="padding: 9px;width: 600px;outline: none;" placeholder="Enter your Phone Number" required><br>
-        <br>
-        <label><b>Password</b></label><br>
-        <br>
-        <input type="password" style="width: 600px;outline: none;" id="password1" placeholder="Enter your Password here" required><br>
-        <br>
-        <input type="checkbox" id="show-password"><label>Show Password</label><br>
-        <br>
-<button style="border: 10px solid transparent;background-color: dodgerblue;border-radius: 5px;text-align: center;width: 620px;cursor: pointer;"><a href="thankyou.html" style="color: #fff;text-decoration: none;">Register</a></button>
-    </form>
 
-</div>
-    <p class="pass"><b>Forgot your password?</b></p> 
-</div>
+    <!-- Login Form -->
+    <div id="login-form">
+        <form>
+            <div class="papa">
+                <h3 class="form-title">Email Address</h3>
+                <input type="text" id="email" placeholder="Email Address *">
+                
+                <h3 class="form-title">Password</h3>
+                <input type="password" id="password" placeholder="Password *">
+                
+                <div class="checkbox-container">
+                    <input type="checkbox"><label>Keep me signed in</label>
+                    <input type="checkbox" id="show-password1"><label>Show Password</label>
+                </div>
+                
+                <div class="buttons-container">
+                    <button id="Login" class="login">Login</button>
+                    <button id="register-btn" class="register">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
+    <!-- Register Form (Hidden by default) -->
+    <div id="register-form" class="fail">
+        <form>
+            <h2>Register</h2>
+            <label for="Username"><b>Username</b></label><br><br>
+            <input type="text" placeholder="Enter your Username" required><br>
+            <label for="email">Email Address</b></label><br><br>
+            <input type="email" placeholder="Enter your Email Address" required><br>
+            
+            <label for="phone"><b>Phone Number</b></label>
+            <select name="phone">
+                <option value="+234">(+234) Nigeria</option>
+                <!-- Add other countries -->
+            </select><br>
+            <input type="number" placeholder="Enter your Phone Number" required><br>
+            
+            <label><b>Password</b></label><br>
+            <input type="password" id="password1" placeholder="Enter your Password" required><br>
+            
+            <input type="checkbox" id="show-password"><label>Show Password</label><br>
+            
+            <button><a href="thankyou.html" class="register-link">Register</a></button>
+        </form>
+    </div>
+
+    <p class="pass"><b>Forgot your password?</b></p>
+
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #666;
+            color: white;
+        }
+        
+        .menu {
+            width: 100%;
+            background-color: navy;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        .menu .login-title {
+            font-size: 30px;
+        }
+
+        .papa {
+            text-align: center;
+            padding: 50px;
+            margin-top: 100px;
+        }
+        
+        .form-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            color: #333;
+        }
+
+        .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .login, .register {
+            padding: 15px;
+            background-color: navy;
+            color: #fff;
+            width: 45%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login:hover, .register:hover {
+            background-color: #333;
+        }
+
+        .fail {
+            font-size: 20px;
+        }
+
+        .pass {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .pass:hover {
+            color: #ff7200;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            /* Adjusting menu */
+            .menu {
+                text-align: center;
+                padding: 15px;
+            }
+
+            .form-title {
+                font-size: 18px;
+            }
+
+            input {
+                width: 90%;
+            }
+
+            .checkbox-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .buttons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .login, .register {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+
+        /* Styling the register button */
+        .register-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Styling the animated effect for the buttons */
+        .login:hover {
+            animation: animate 1s linear infinite;
+        }
+
+        .register:hover {
+            animation: animate 1s linear infinite;
+        }
+
+        @keyframes animate {
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
 
 </body>
 </html>
-<style>
-    .menu{
-        width: 1450px;
-        height: 70px;
-        float: left;
-        border: 80px solid transparent;
-        background-color: navy;
-        margin-top: -67px;
-        margin-left: -8px;
-        justify-content: space-between;
-        position: fixed;
-    }
-    @media screen and (max-width: 768px) {
-        .menu{
-            width: 485px;
-            height: 25px;
-            border: 29px solid transparent;
-            margin-top: -23px;
-            margin-left: -2px;
-        }
-        ul{
-            margin-left: 265px;
-        }
-        ul li{
-            margin-left: 34px;
-            margin: -24px;
-        }
-    }
-    ul{
-        float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 780px;
-    }
-    ul li{
-        list-style: none;
-        margin-left: 100px;
-        margin-top: -77px;
-        font-size: 15px;
-    }
-    .login{
-        transition: ease-in-out 0.8s;
-        background-color: navy;
-    }
-    .login:hover{
-        animation: animate 1s linear infinite;
-    }
 
-    .register{
-        transition: ease-in-out 0.8s;
-    }
-    .register:hover{
-        animation: animate 1s linear infinite;
-    }
-    @keyframes animate {
-        100% {
-            filter: hue-rotate(360deg);
-        }
-    }
-    ul li a{
-        transition: 0.4s ease-in-out;
-        text-decoration: none;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: #fff;
-        margin-left: -70px;
-        
-    }
-    ul li a:hover{
-        color: #ff7200;
-    }
-    .pass{
-        transition: 0.4s ease-out;
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-    }
-.pass:hover{
-    color: #ff7200;
-}
-.papa{
-    margin-top: 200px;
-    color: #fff;
-}
-.ink{
-    transition: 0.4s ease-in-out;
-}
-.ink:hover{
-    color: #ff7200;
-}
-input{
-    outline: none;
-}
-.fail{
-    font-size: 20px;
-}
-input{
-    border-radius: 5px;
-    padding: 13.5px;
-    border: none;
-    color: red;
-}
-
-input::placeholder{
-    color: red;
-    font-weight: bolder;
-}
-</style>
 <script>
 document.getElementById('Login').addEventListener('click', function(event){
     event.preventDefault();
