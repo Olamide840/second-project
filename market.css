@@ -283,9 +283,15 @@ h1 {
         width: 65%;
         position: relative;
         left: 75px;
+        top: -10px;
     }
     .main-content{
-        width: 150%;
+        width: 120%;
+        position: relative;
+        left: -15px;
+    }
+    .main-content button{
+        width: 50%;
     }
     .food {
         font-size: 25px;
