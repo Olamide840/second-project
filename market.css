@@ -282,7 +282,7 @@ h1 {
     .searching {
         width: 80%;
         position: relative;
-        left: -50px;
+        left: 50px;
     }
 
     .food {
@@ -306,7 +306,7 @@ h1 {
     }
 
     button {
-        width: 80%;
+        width: 100%;
     }
 
     .container {
