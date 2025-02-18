@@ -68,11 +68,11 @@ textarea {
     }
     input{
         position: relative;
-        left: -10px;
+        left: -15px;
     }
     input, textarea {
         padding: 15px;
-        left: -10px;
+        left: -23px;
     }
 }
 
