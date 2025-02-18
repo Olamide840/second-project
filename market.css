@@ -282,9 +282,11 @@ h1 {
     .searching {
         width: 80%;
         position: relative;
-        left: 50px;
+        left: 65px;
     }
-
+    .main-content{
+        width: 100%;
+    }
     .food {
         font-size: 25px;
         height: 40vh;
@@ -294,7 +296,9 @@ h1 {
     .menu-grid {
         flex-wrap: wrap;
     }
-
+    .menu-grid button{
+        margin-top: 15px;
+    }
     .menu-item {
         min-width: 80%;
         margin: 10px 0;
