@@ -295,6 +295,7 @@ h1 {
     }
     .main-content button{
         width: 50%;
+        margin-top: -30px;
     }
     .food {
         font-size: 25px;
