@@ -65,13 +65,15 @@ textarea {
 
     button {
         font-size: 14px; 
+        width: 90%;
     }
     input{
         position: relative;
-        left: -15px;
+        left: -13px;
     }
     input, textarea {
         padding: 15px;
+        position: relative;
         left: -23px;
     }
 }
