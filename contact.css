@@ -29,7 +29,7 @@ li{
     button{
         margin: 3.5px;
         padding: 5px;
-        width: 7px;
+        width: 20%;
         cursor: not-allowed;
         position: relative;
         left: 7px;
@@ -67,59 +67,6 @@ a{
 i{
     color: #fff;
     font-size: 25px;
-}
-img{
-    height:80vh;
-    width: 30vw;
-    position: fixed;
-    left: 68.8%;
-    top: 100px;
-    border: transparent;
-    border-radius: 10px;
-    animation: image 3s infinite;
-    transition: .5s;
-    background: transparent;
-    cursor: pointer;
-}
-@media screen  and (max-width: 768px){
-    img{
-        height: 33px;
-        width: 12px;
-        position: fixed;
-        left: 21%;
-        top: 33px;
-    }
-}
-img::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showLight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 2.5;
-}
-@keyframes image{
-    0%{
-        border-color: red;
-        
-    }
-    50%{
-        transform: translateX(40px);
-        transform: translateY(40px);
-    }
-    100%{
-        border-color: green;
-        
-    }
-
-}
-img:hover{
-    opacity: .1;
-    background: #081b29;
 }
 a:hover{
     color: steelblue;
