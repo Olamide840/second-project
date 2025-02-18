@@ -280,12 +280,12 @@ h1 {
 /* Media Query for Smaller Screens (Mobile) */
 @media (max-width: 768px) {
     .searching {
-        width: 80%;
+        width: 65%;
         position: relative;
-        left: 65px;
+        left: 75px;
     }
     .main-content{
-        width: 100%;
+        width: 150%;
     }
     .food {
         font-size: 25px;
@@ -298,6 +298,7 @@ h1 {
     }
     .menu-grid button{
         margin-top: 15px;
+        width: 80%;
     }
     .menu-item {
         min-width: 80%;
