@@ -48,7 +48,7 @@ ul {
 
 ul li {
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 ul li a {
@@ -105,14 +105,15 @@ input::placeholder {
 /* Buttons */
 button {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     padding: 14px;
     background: black;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
     margin: 10px auto;
+    border: none;
 }
 
 button:hover {
@@ -122,7 +123,7 @@ button:hover {
 /* Card - Dash */
 .dash {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
     margin: 20px auto;
     padding: 20px;
@@ -137,6 +138,24 @@ button:hover {
 .dash:hover {
     transform: translateX(10px) translateY(10px);
 }
+/* Boxicon Styling */
+i {
+    font-size: 24px; 
+    border-radius: 50%; 
+    padding: 12px; 
+    background-color: darkred; 
+    color: var(--text-color); 
+    transition: 0.3s ease-in-out; 
+    margin: 5px; 
+}
+
+
+i:hover {
+    background-color: #ff7200; 
+    color: white; 
+    transform: scale(1.1); 
+}
+
 
 /* Media Queries for Responsiveness */
 
