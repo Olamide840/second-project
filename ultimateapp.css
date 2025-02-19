@@ -139,15 +139,18 @@ input {
         width: 80%;
         margin: 10px 0;
     }
+    .btn{
+        width: 20%;
+    }
 }
 
-/* Styling the register button */
+
 .register-link {
     color: #fff;
     text-decoration: none;
 }
 
-/* Styling the animated effect for the buttons */
+
 .login:hover {
     animation: animate 1s linear infinite;
 }
