@@ -117,6 +117,8 @@ input {
 
     .form-title {
         font-size: 18px;
+        position: relative;
+        left: -20px;
     }
 
     input {
