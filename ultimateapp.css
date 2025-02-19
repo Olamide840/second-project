@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #666;
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    background-color: navy;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu .login-title {
+    font-size: 30px;
+}
+
+.papa {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left: -170px;
+}
+
+input {
+    width: 30%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login, .register {
+    padding: 15px;
+    background-color: navy;
+    color: #fff;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover, .register:hover {
+    background-color: red;
+}
+
+.fail {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.pass {
+    text-align: center;
+    font-size: 20px;
+}
+
+.pass:hover {
+    color: #ff7200;
+}
+.btn{
+    background: red;
+    border: none;
+    width: 10%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+}
+.btn:hover{
+    scale: 1.1;
+}
+.show{
+    position: relative;
+    left: -445px;
+}
+.glo{
+    position: relative;
+    left: -220px;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjusting menu */
+    .menu {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 18px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .checkbox-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login, .register {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling the register button */
+.register-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling the animated effect for the buttons */
+.login:hover {
+    animation: animate 1s linear infinite;
+}
+
+.register:hover {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

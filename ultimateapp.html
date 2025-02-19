@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="ultimateapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body style="background-size: cover;letter-spacing:1px; font: 12px/40px serif;background: #666; margin: 0;">
+<body>
 
     <!-- Menu -->
     <div class="menu">
-        <i class="fa-solid fa-people-group" style="font-size: 30px;color: #fff;"></i> 
-        <label style="color: #fff;font-size: 30px;"><b>UltimateMember</b></label>
+        <i class="fa-solid fa-people-group"></i> 
+        <label><b>UltimateMember</b></label>
         <br><br>
         <h1 class="login-title">Login</h1>
     </div>
@@ -40,194 +41,32 @@
     </div>
 
     <!-- Register Form (Hidden by default) -->
-    <div id="register-form" class="fail">
+    <div id="register-form" class="fail" style="display: none;">
         <form>
             <h2>Register</h2>
             <label for="Username"><b>Username</b></label><br><br>
-            <input type="text" placeholder="Enter your Username" required><br>
+            <input type="text" placeholder="Enter your Username" required><br><br>
             <label for="email">Email Address</b></label><br><br>
-            <input type="email" placeholder="Enter your Email Address" required><br>
+            <input type="email" placeholder="Enter your Email Address" required><br><br>
             
             <label for="phone"><b>Phone Number</b></label>
             <select name="phone">
                 <option value="+234">(+234) Nigeria</option>
                 <!-- Add other countries -->
-            </select><br>
-            <input type="number" placeholder="Enter your Phone Number" required><br>
+            </select><br><br>
+            <input type="number" placeholder="Enter your Phone Number" required><br><br>
             
             <label><b>Password</b></label><br>
-            <input type="password" id="password1" placeholder="Enter your Password" required><br>
+            <input type="password" id="password1" placeholder="Enter your Password" required><br><br>
             
-            <input type="checkbox" id="show-password"><label>Show Password</label><br>
+            <input type="checkbox" id="show-password" class="glo"><label class="show">Show Password</label><br>
             
-            <button><a href="thankyou.html" class="register-link">Register</a></button>
+            <button class="btn"><a href="thankyou.html" class="register-link">Register</a></button>
         </form>
     </div>
 
     <p class="pass"><b>Forgot your password?</b></p>
-
-    <style>
-        /* Global Styles */
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #666;
-            color: white;
-        }
-        
-        .menu {
-            width: 100%;
-            background-color: navy;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        
-        .menu .login-title {
-            font-size: 30px;
-        }
-
-        .papa {
-            text-align: center;
-            padding: 50px;
-            margin-top: 100px;
-        }
-        
-        .form-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        
-        input {
-            width: 80%;
-            padding: 12px;
-            margin: 10px;
-            border-radius: 5px;
-            border: none;
-            color: #333;
-        }
-
-        .checkbox-container {
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-            margin-bottom: 20px;
-        }
-
-        .buttons-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .login, .register {
-            padding: 15px;
-            background-color: navy;
-            color: #fff;
-            width: 45%;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .login:hover, .register:hover {
-            background-color: #333;
-        }
-
-        .fail {
-            font-size: 20px;
-        }
-
-        .pass {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .pass:hover {
-            color: #ff7200;
-        }
-
-        /* Media Queries */
-        @media screen and (max-width: 768px) {
-            /* Adjusting menu */
-            .menu {
-                text-align: center;
-                padding: 15px;
-            }
-
-            .form-title {
-                font-size: 18px;
-            }
-
-            input {
-                width: 90%;
-            }
-
-            .checkbox-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .buttons-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .login, .register {
-                width: 80%;
-                margin: 10px 0;
-            }
-        }
-
-        /* Styling the register button */
-        .register-link {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        /* Styling the animated effect for the buttons */
-        .login:hover {
-            animation: animate 1s linear infinite;
-        }
-
-        .register:hover {
-            animation: animate 1s linear infinite;
-        }
-
-        @keyframes animate {
-            100% {
-                filter: hue-rotate(360deg);
-            }
-        }
-    </style>
-
+<script src="ultimateapp.js"></script>
 </body>
 </html>
 
-<script>
-document.getElementById('Login').addEventListener('click', function(event){
-    event.preventDefault();
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    
-    if(!email, !password){alert('Please kindly fill in your credentials correctly.');return;}
-    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {alert('Invalid email format');return;}
-    if (password.length < 8 || !/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) { alert('Password must be at least 8 characters, contain at least one lowercase letter, one uppercase letter, and one number!');return;} 
-    else{alert('Login Successful.')}
-    window.location.href = 'ultimate.html';
-});
-document.getElementById('show-password1').addEventListener('change', function(event) { var passwordField = document.getElementById('password'); if (this.checked) {passwordField.type = 'text';} else {passwordField.type = 'password';}});
-document.getElementById('show-password').addEventListener('change', function(event) { var passwordField = document.getElementById('password1'); if (this.checked) {passwordField.type = 'text';} else {passwordField.type = 'password';}});
- 
-
-document.getElementById('register-btn').addEventListener('click', function(){
-    event.preventDefault();
-    document.getElementById('register-form').style.display = 'block';
-});
-
-
-</script>
