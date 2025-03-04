@@ -64,6 +64,9 @@ aside{
     line-height: 30px;
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .image img{
     width: 20px;
@@ -105,17 +108,19 @@ button:hover{
     text-align: center;
     word-spacing: 5px;
     line-height: 30px;
-    width: 900px;
+    width: 100%;
     padding: 20px;
     background: #555;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 .feature{
-    width: 50%;
+    width: 48%;
     padding: 20px;
     background: #d6f4f4;
     text-align: center;
     transition: .3s;
+    margin-bottom: 20px;
 }
 .feature img{
     width: 150px;
@@ -134,11 +139,11 @@ button:hover{
     background: #c0ecec;
     transform: scale(1.05);
 }
-.feature:nth-child(){
+.feature:nth-child(odd){
     background: #333;
     color: #fff;
 }
-.feature:nth-child(){
+.feature:nth-child(even){
     background: #555;
     color: #fff;
 }
@@ -170,7 +175,7 @@ footer a{
     border-radius: 5px;
     bottom: 20px;
 }
-.social-icons  {
+.social-icons{
     background: red;
 }
 .footer-links{
@@ -194,4 +199,71 @@ footer a{
 }
 .footer-text b:hover, i:hover{
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 20px;
+    }
+    .main{
+        margin: auto 20px;
+    }
+    .apply-now{
+        flex-direction: column;
+    }
+    .apply-now img{
+        width: 100%;
+        max-width: 350px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .hero h1{
+        font-size: 22px;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+    .contact button{
+        padding: 10px 30px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1{
+        font-size: 20px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .features{
+        padding: 10px;
+    }
+    .feature{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .apply-now img{
+        width: 100%;
+        max-width: 300px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .apply-now p{
+        font-size: 18px;
+    }
+    button{
+        padding: 8px 25px;
+    }
 }
