@@ -31,9 +31,11 @@ aside{
     position: relative;
 }
 .img-div img{
-    height: 40vh;
-    width: 30vw;
+    height: auto; 
+    width: 100%;  
+    max-width: 100%;  
     opacity: .6;
+    object-fit: cover; 
 }
 .txt{
     position: absolute;
@@ -208,6 +210,10 @@ footer a{
     .apply-now img{
         width: 100%;
         max-width: 350px;
+    }
+    .img-div img{
+        height: auto; 
+        width: 100%;
     }
     .features{
         flex-direction: column;
