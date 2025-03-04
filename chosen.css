@@ -139,14 +139,6 @@ button:hover{
     background: #c0ecec;
     transform: scale(1.05);
 }
-.feature:nth-child(odd){
-    background: #333;
-    color: #fff;
-}
-.feature:nth-child(even){
-    background: #555;
-    color: #fff;
-}
 .contact{
     text-align: center;
     padding: 40px;
