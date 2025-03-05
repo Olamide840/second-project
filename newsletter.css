@@ -263,6 +263,43 @@ main {
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
 }
+.prayer-requests {
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.prayer-requests h2 {
+    text-align: center;
+    color: #0033a0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.prayer-requests textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.prayer-requests button {
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.prayer-requests button:hover {
+    background-color: #52a8f0;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
