@@ -299,6 +299,44 @@ main {
 .prayer-requests button:hover {
     background-color: #52a8f0;
 }
+.donations {
+    background-color: #eaf7ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.donations h2 {
+    color: #0033a0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.donations p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.donations button {
+    background-color: #0033a0;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.donations button a {
+    color: white;
+    text-decoration: none;
+}
+
+.donations button:hover {
+    background-color: #52a8f0;
+}
 
 @media (max-width: 768px) {
     header {
