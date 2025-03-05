@@ -214,7 +214,55 @@ main {
     font-size: 14px;
     margin-top: 20px;
 }
+.announcement-section {
+    background-color: #f2f9ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
 
+.announcement-section h2 {
+    text-align: center;
+    color: #0033a0;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.announcement {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcement h3 {
+    color: #0033a0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.announcement p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.announcement:hover {
+    background-color: #e6f3ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -269,6 +317,9 @@ main {
 
     .newsletter-signup button {
         width: 100%; /* Make the button take full width */
+    }
+    .announcements {
+        grid-template-columns: repeat(2, 1fr); /* For tablets, show 2 items per row */
     }
 }
 
