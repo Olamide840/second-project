@@ -148,8 +148,73 @@ main {
     margin-top: 10px;
     font-size: 15px;
 }
+.newsletter-footer {
+    background-color: #0033a0;
+    color: white;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
 
-/* Mobile & Tablet responsiveness */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* This allows the items to wrap on smaller screens */
+}
+
+.footer-content div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.contact-info p, 
+.newsletter-signup p, 
+.social-media p {
+    margin: 10px 0;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-signup button {
+    padding: 10px;
+    background-color: #52a8f0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    background-color: #3a8ecf;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -182,7 +247,31 @@ main {
     .past {
         flex-direction: column;
     }
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div {
+        width: 80%; /* Make the columns take up most of the width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .social-media a {
+        display: block; /* Stack social media links vertically */
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-signup input {
+        width: 100%; /* Make the input field take full width */
+    }
+
+    .newsletter-signup button {
+        width: 100%; /* Make the button take full width */
+    }
 }
+
 
 /* Small screen (Mobile devices) */
 @media (max-width: 480px) {
