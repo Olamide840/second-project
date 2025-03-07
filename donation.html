@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <p class="CHURCH">CHURCH NEWSLETTER | ISSUE #25</p>
+        <p class="pap">JANUARY 2025</p>
+    </header>
+    <div>
+        <main>
+            <h1>Welcome to the Donation Page to Support Our Ministry.</h1>
+            <div class="container">
+                <h1>Choose Your Payment Option</h1>
+                <!-- Add the payment-form ID here to match the JS reference -->
+                <div id="payment-form">
+                    <div class="payment-options">
+                        <div class="payment-option" onclick="selectPayment('bank-transfer')">
+                            Pay with Bank Transfer
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('atm')">
+                            Pay with ATM
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('paypal')">
+                            Pay with PayPal
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('cash-app')">
+                            Pay with Cash App
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('credit-card')">
+                            Pay with Credit/Debit Card
+                        </div>
+                    </div>
+                
+                    <div id="additional-info">
+                        <div class="payment-method-info" id="bank-transfer-info">
+                            <div class="info-title">Bank Transfer</div>
+                            <p>Use your bank's online services to transfer funds directly to our account. Please allow 2-3 business days for processing.</p>
+                        </div>
+                        <div class="payment-method-info" id="atm-info">
+                            <div class="info-title">ATM Payment</div>
+                            <p>Use an ATM machine to make the payment. Please provide the receipt number for verification.</p>
+                        </div>
+                        <div class="payment-method-info" id="paypal-info">
+                            <div class="info-title">PayPal</div>
+                            <p>Proceed with PayPal to complete the payment securely using your PayPal account or card linked to PayPal. Our paypay name is </p>
+                        </div>
+                        <div class="payment-method-info" id="cash-app-info">
+                            <div class="info-title">Cash App</div>
+                            <p>Make a payment using Cash App by sending funds to our username. Include the order ID for verification.</p>
+                        </div>
+                        <div class="payment-method-info" id="credit-card-info">
+                            <div class="info-title">Credit/Debit Card</div>
+                            <p>Enter your card details to make a quick payment using a secure gateway.</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="submitPayment()">Proceed with Payment</button>
+                </div>
+        </main>
+        <div class="confirmation-message" id="confirmation-message" style="display:none;">
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your payment. We have received your payment and are processing your order.</p>
+            <p>Your confirmation number is: <span class="confirmation-id" id="confirmation-id"></span></p>
+            <p>We will notify you once your payment has been fully processed.</p>
+        </div>
+
+        <section>
+            <p>* Kindly take note of the below instructions before Performing any Transaction on this Page.</p>
+            <li>Before You can Make any transactions with your Credit/Debit Card, you need to add your Card information.</li>
+            <li>Make Sure your Card has be Confirmed and approved for Legal Transactions before making any sort of Transaction on this Page.</li>
+            <li>Be Sure to confirm that a single Transaction has been confirmed before performing any other Transaction.</li>
+            <li>Do well to Check the correct details of the transaction you are making,as wrong details/wrong transaction(s) will be at owner's Risk.</li>
+            <li>Please do well to send your transaction ID number to our email to confirm your Transaction.</li>
+            <li>If you dont have the above payment method,<i><a href="#">Click here</a></i> to add your Preferred payment method.</li>
+        </section>
+    </div>
+    <script src="donation.js"></script>
+</body>
+</html>
