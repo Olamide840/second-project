@@ -1,4 +1,4 @@
-const apiKey = '6e0fdb96';  // Replace with your actual API key
+const apiKey = '6e0fdb96';  
 const movieResultsSection = document.getElementById('movieResults');
 const loadingMessage = document.getElementById('loadingMessage');
 
