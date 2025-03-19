@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1>Movie Search</h1>
+        <p>Find your favorite movies!</p>
+    </header>
+
+    
+    <section class="search-section">
+        <input type="text" id="movieQuery" placeholder="Search for a movie...">
+        <button onclick="searchMovies()">Search</button>
+        <p id="loadingMessage" class="hidden">Searching...</p>
+    </section>
+
+    <!-- Pagination Section -->
+<div id="pagination" class="pagination">
+    <button id="prevPage" onclick="changePage(-1)">Previous</button>
+    <button id="nextPage" onclick="changePage(1)">Next</button>
+</div>
+
+
+
+    <!-- Movie Results Section -->
+    <section id="movieResults" class="movie-results">
+        <!-- Movie cards will appear here -->
+    </section>
+
+    
+    
+
+    <script src="movie.js"></script>
+</body>
+</html>
