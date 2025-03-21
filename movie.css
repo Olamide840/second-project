@@ -191,8 +191,9 @@ header p {
     }
 
     .pagination {
-        width: 15vw;  
-        height: 5vh;
+        width: 20vw;  
+        height: 20vh;
+        margin: 20px;
     }
 
     .pagination button {
