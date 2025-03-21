@@ -149,8 +149,9 @@ header p {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 15px #00ff88;
-    margin: 1rem;
     border-radius: 12px;
+    position: relative;
+    left: 40%;
 }
 
 .pagination button {
@@ -182,7 +183,7 @@ header p {
     }
 
     .search-section input {
-        width: 50%;
+        width: 60%;
     }
 
     .movie-card {
@@ -192,7 +193,7 @@ header p {
 
     .pagination {
         width: 20vw;  
-        height: 20vh;
+        height: auto;
         margin: 20px;
     }
 
