@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+        <div class="container">
+            <!-- Company Name Section -->
+            <header>
+                <em>FirstBank</em> 
+                <div class="divs">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                </div>
+                <p>Since 1894</p>
+            </header>
+    
+            <!-- Card Information Section -->
+            <section class="bank">
+                <h2>Card Information</h2>
+                <p>Enter the details of your card to proceed with the transaction.</p>
+                <!-- Card Number Input -->
+                <div class="input-group">
+                    <label for="card">Card Number:</label>
+                    <input type="number" id="card" name="card" placeholder="1234-5678-9012-3456" max="16" required title="Enter a valid 16-digit card number">
+                    <small>16-digit card number without spaces or dashes.</small>
+                </div>
+    
+                <!-- Expiry Date Input -->
+                <div class="input-group">
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required title="Enter expiry date in MM/YY format">
+                    <small>For example: 12/24</small>
+                </div>
+    
+                <!-- CVV Input -->
+                <div class="input-group">
+                    <label for="cv">CVV Number:</label>
+                    <input type="number" id="cv" name="cv" placeholder="123" required title="Enter the 3-digit CVV number on the back of your card">
+                    <small>3-digit number found on the back of your card.</small>
+                </div>
+                
+                <div class="input-group">
+                    <label for="pin">PIN Number:</label>
+                    <input type="password" id="pin" placeholder="Enter your PIN" required title="Enter the PIN number of your card">
+                    <small>Your 4-digits PIN number.</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="name">Cardholder Name:</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                    <small>Enter your Account name on your Bank card.</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your Email Address">
+                    <small>Enter the email address linked to your bank Account.</small>
+                </div>
+               
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter a phone number">
+                    <small>Enter the Phone number that is linked to you Account.</small>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </section>
+    
+            <!-- Footer Section -->
+            <footer>
+                <p>&copy; 2025 FirstBank. All rights reserved.</p>
+            </footer>
+        </div>
+
+    
+</body>
+<script src="card.js"></script>
+</html>

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right, #00b4d8, #0033a0);
+    height: 100vh;
+}
+.container{
+    background: #0033a0;
+    margin: auto 40px;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 600px;
+    width: 35%;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px #0033a0;
+}
+em{
+    font-size: 2rem;
+}
+.bank{
+    margin-top: 40px;
+}
+.container input{
+    padding: 10px;
+    width: 100%;
+}
+.container input::placeholder{
+    letter-spacing: 1px;
+}
+button{
+    padding: 12px 20px;
+    font-size: larger;
+    background: #45a049;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    background: #00ff88;
+    box-shadow: 1px 3px 15px #00ff88;
+}
+.divs{
+    float: right;
+    position: relative;
+}
+.div1{
+    height: 50px;
+    width: 50px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+}
+.div2{
+    height: 50px;
+    width: 50px;
+    background: orange;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+}
