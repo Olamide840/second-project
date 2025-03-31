@@ -76,12 +76,19 @@ h1 {
 .payment-method-info {
     display: none;
 }
-
+.payment-method-info p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .info-title {
     font-weight: bolder;
     margin-bottom: 10px;
 }
-
+span{
+    color: #0033a0;
+    font-weight: bolder;
+}
 .payment-method-info p {
     margin: 5px 0;
 }

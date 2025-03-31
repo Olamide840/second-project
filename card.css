@@ -5,8 +5,7 @@
 }
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(to right, #00b4d8, #0033a0);
-    height: 100vh;
+    background: linear-gradient(to right, #00b4d8, #0033a0, #0033a0, blue, lightblue);
 }
 .container{
     background: #0033a0;
@@ -19,7 +18,7 @@ body{
     line-height: 30px;
     letter-spacing: 1px;
     border-radius: 5px;
-    box-shadow: 3px 3px 15px #0033a0;
+    box-shadow: 2px 3px 25px #0033a0;
 }
 em{
     font-size: 2rem;
@@ -67,4 +66,7 @@ button:hover{
     border-radius: 50%;
     position: relative;
     left: -35px;
+}
+footer{
+    text-align: center;
 }

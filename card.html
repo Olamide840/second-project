@@ -22,51 +22,53 @@
             <section class="bank">
                 <h2>Card Information</h2>
                 <p>Enter the details of your card to proceed with the transaction.</p>
+              <form>  
                 <!-- Card Number Input -->
                 <div class="input-group">
                     <label for="card">Card Number:</label>
-                    <input type="number" id="card" name="card" placeholder="1234-5678-9012-3456" max="16" required title="Enter a valid 16-digit card number">
+                    <input type="number" id="card" name="card" placeholder="1234-5678-9012-3456" max="16" title="Enter a valid 16-digit card number">
                     <small>16-digit card number without spaces or dashes.</small>
                 </div>
     
                 <!-- Expiry Date Input -->
                 <div class="input-group">
                     <label for="expiry">Expiry Date:</label>
-                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required title="Enter expiry date in MM/YY format">
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" title="Enter expiry date in MM/YY format">
                     <small>For example: 12/24</small>
                 </div>
     
                 <!-- CVV Input -->
                 <div class="input-group">
                     <label for="cv">CVV Number:</label>
-                    <input type="number" id="cv" name="cv" placeholder="123" required title="Enter the 3-digit CVV number on the back of your card">
+                    <input type="number" id="cv" name="cv" placeholder="123" title="Enter the 3-digit CVV number on the back of your card">
                     <small>3-digit number found on the back of your card.</small>
                 </div>
                 
                 <div class="input-group">
                     <label for="pin">PIN Number:</label>
-                    <input type="password" id="pin" placeholder="Enter your PIN" required title="Enter the PIN number of your card">
+                    <input type="password" id="pin" placeholder="Enter your PIN" title="Enter the PIN number of your card">
                     <small>Your 4-digits PIN number.</small>
                 </div>
 
                 <div class="input-group">
                     <label for="name">Cardholder Name:</label>
-                    <input type="text" id="name" placeholder="John Doe" required>
+                    <input type="text" id="name" placeholder="John Doe" title="Enter the Cardholder name">
                     <small>Enter your Account name on your Bank card.</small>
                 </div>
 
                 <div class="input-group">
                     <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="Enter your Email Address">
+                    <input type="email" id="email" placeholder="Enter your Email Address" title="Enter your Email Address">
                     <small>Enter the email address linked to your bank Account.</small>
                 </div>
                
                 <div class="input-group">
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" placeholder="Enter a phone number">
+                    <input type="tel" id="phone" placeholder="Enter a phone number" title="Enter Phone Number">
                     <small>Enter the Phone number that is linked to you Account.</small>
                 </div>
                 <button type="submit" id="submit">Submit</button>
+              </form>
             </section>
     
             <!-- Footer Section -->

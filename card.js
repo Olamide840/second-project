@@ -40,7 +40,7 @@
         }
         // Create and show the "Processing..." message
         const processingMessage = document.createElement('p');
-        processingMessage.textContent = 'Processing...';
+        processingMessage.textContent = 'Processing your request...';
         processingMessage.style.fontWeight = 'bolder';
         processingMessage.style.color = 'red';  
         bankSection.appendChild(processingMessage);
