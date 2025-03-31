@@ -26,7 +26,11 @@ document.getElementById("password").addEventListener("input", function () {
     if (strength < 3) {
         suggestionText.innerHTML = `Try using a mix of uppercase, lowercase, numbers, and special characters.<br>
         Example: <strong>${generateRandomPassword()}</strong>`;
-    } else {
+    } 
+    if (password.length < 8) {
+        alert('Password Length should be more than 8.');return;
+    }
+    else {
         suggestionText.innerHTML = "";
     }
 });
