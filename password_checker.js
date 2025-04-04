@@ -1,3 +1,4 @@
+// Password Strength Checker
 document.getElementById("password").addEventListener("input", function () {
     let password = this.value;
     let strengthText = document.getElementById("strength-text");
@@ -13,7 +14,7 @@ document.getElementById("password").addEventListener("input", function () {
     if (/[\W_]/.test(password)) strength++;
 
     let feedback = ["Very Weak", "Weak", "Medium", "Strong", "Very Strong"];
-    let colors = ["red", "orange", "yellow", "#1abc9c", "#fff"];
+    let colors = ["red", "orange", "yellow", "#1abc9c", "green"];
     let progressWidth = ["10%", "25%", "50%", "75%", "100%"];
 
     strengthText.textContent = `Strength: ${feedback[strength]}`;
@@ -22,15 +23,10 @@ document.getElementById("password").addEventListener("input", function () {
     progressBar.style.width = progressWidth[strength];
     progressBar.style.background = colors[strength];
 
-    // Show suggestions if password is weak
     if (strength < 3) {
         suggestionText.innerHTML = `Try using a mix of uppercase, lowercase, numbers, and special characters.<br>
         Example: <strong>${generateRandomPassword()}</strong>`;
-    } 
-    if (password.length < 8) {
-        alert('Password Length should be more than 8.');return;
-    }
-    else {
+    } else {
         suggestionText.innerHTML = "";
     }
 });
@@ -44,7 +40,9 @@ document.getElementById("togglePassword").addEventListener("click", function () 
 // Generate a Strong Password
 document.getElementById("generatePassword").addEventListener("click", function () {
     let newPassword = generateRandomPassword();
-    document.getElementById("password").value = newPassword;
+    let passwordField = document.getElementById("password");
+    passwordField.value = newPassword;
+
     document.getElementById("strength-text").textContent = "Strength: Very Strong";
     document.getElementById("progress").style.width = "100%";
     document.getElementById("progress").style.background = "green";
@@ -66,7 +64,7 @@ document.getElementById("themeToggle").addEventListener("change", function () {
     document.body.classList.toggle("light-mode");
 });
 
-// Generate Random Password
+// Generate Random Password Function
 function generateRandomPassword() {
     let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
     let password = "";
