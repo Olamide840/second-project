@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Awareness</title>
+  <link rel="stylesheet" href="home_page.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Cybersecurity Awareness</h1>
+      <p>Learn how to protect yourself online with interactive lessons and fun quizzes.</p>
+      <button onclick="scrollToModules()">Start Learning</button>
+    </div>
+    <img src="cyb.jpg" alt="Cybersecurity image" />
+  </header>
+  <main class="topics">
+    <section class="topic-card">
+      <h2>Phishing</h2>
+      <p>Learn how to identify and avoid phishing attacks.</p>
+      <a href="phishing.html" class="btn">Start Learning</a>
+    </section>
+  
+    <section class="topic-card">
+      <h2>Password Safety</h2>
+      <p>Understand how to create and manage strong passwords.</p>
+      <a href="password.html" class="btn">Start Learning</a>
+    </section>
+  
+    <section class="topic-card">
+      <h2>Safe Browsing</h2>
+      <p>Browse the internet safely by learning smart habits.</p>
+      <a href="safe-browsing.html" class="btn">Start Learning</a>
+    </section>
+  </main>
+  
+  <section class="progress-section">
+    <h2>Your Progress</h2>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <ul class="module-status">
+      <li>Phishing: <span id="phishing-status">❌ Not Completed</span></li>
+      <li>Password Safety: <span id="password-status">❌ Not Completed</span></li>
+      <li>Safe Browsing: <span id="browsing-status">❌ Not Completed</span></li>
+      <button onclick="localStorage.clear(); location.reload();">Reset Progress</button>
+
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Cybersecurity Awareness</p>
+  </footer>
+
+  <script src="home_page.js"></script>
+</body>
+</html>

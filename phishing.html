@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Awareness</title>
+  <link rel="stylesheet" href="home_page.css" />
+</head>
+<body>
+  <header class="hero small">
+    <h1>Phishing Awareness</h1>
+  </header>
+
+  <main class="module">
+    <section>
+      <h2>What is Phishing?</h2>
+      <p>Phishing is a cyber attack where hackers trick you into giving away personal info like passwords or credit card numbers by pretending to be a trustworthy source.</p>
+    </section>
+
+    <section>
+      <h2>How to Spot Phishing:</h2>
+      <ul>
+        <li>Look for suspicious email addresses or domains</li>
+        <li>Watch out for urgency — “Your account will be closed!”</li>
+        <li>Don’t click unknown links or attachments</li>
+        <li>Check for bad grammar or weird requests</li>
+      </ul>
+    </section>
+
+    <button onclick="startQuiz()">Take Quiz</button>
+  </main>
+<style>
+    body{
+        background-image: url(phishing.jpg);
+        object-fit: contain;
+        color: #fff;
+    }
+    button{
+        padding: 10px 35px;
+        background: #4CAF50;
+        cursor: pointer;
+        transition: .4s ease-in-out;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+    }
+    button:hover{
+        background: #45a049;
+        box-shadow: 0 0 50px #45a049, 0 0 40px #4CAF50;
+        scale: 1.05;
+    }
+</style>
+  <script>
+    function startQuiz() {
+      window.location.href = 'phishing-quiz.html';
+    }
+  </script>
+</body>
+</html>
