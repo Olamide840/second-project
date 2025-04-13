@@ -245,9 +245,8 @@ const questions = [
   function endQuiz() {
     document.getElementById("quiz-box").style.display = "none";
     document.getElementById("result-box").style.display = "block";
-    document.getElementById("score").textContent = score;
-  
-    localStorage.setItem("phishingScore", score);
+    document.getElementById("score").textContent = parseInt(score);
+     localStorage.setItem("phishingScore", score);
   }
   
   function goHome() {
