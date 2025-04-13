@@ -246,11 +246,8 @@ const questions = [
     document.getElementById("quiz-box").style.display = "none";
     document.getElementById("result-box").style.display = "block";
     document.getElementById("score").textContent = parseInt(score);
-
-    const total = questions.length;
-    const percentage = Math.round((score / total) * 100);
-
-    document.getElementById("score").textContent = `${score} / ${total}`;
+    const percent = Math.round((score / questions.length) * 100);
+document.getElementById("score").textContent = `You got ${score} out of ${questions.length} (${percent}%)`;
 
      localStorage.setItem("phishingScore", score);
   }
