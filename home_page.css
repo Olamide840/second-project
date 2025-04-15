@@ -141,6 +141,7 @@
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s;
+    color: #fff;
   }
   
   .option-btn:hover {
