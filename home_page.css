@@ -70,13 +70,19 @@
   .topic-card .btn:hover {
     background-color: #005bb5;
   }
+  header.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .hero img {
-    width: 400px;
+    width: 300px;
     max-width: 100%;
   }
   
   .hero-content {
     max-width: 500px;
+    
   }
   
   .hero button {
