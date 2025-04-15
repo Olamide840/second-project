@@ -47,9 +47,11 @@
   }
   .topic-card:nth-child(2){
     background: url(password.png);
+    color: #fff;
   }
   .topic-card:nth-child(3){
     background: url(browsing.png);
+    color: #fff;
   }
   .topic-card:hover {
     transform: translateY(-5px);
