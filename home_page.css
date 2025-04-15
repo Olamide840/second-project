@@ -94,8 +94,8 @@ main:nth-child(even) {
   }
   
   .hero img {
-    width: 300px;
-    max-width: 90%;
+    width: 400px;
+    max-width: 100%;
   }
   
   .hero-content {
@@ -105,17 +105,11 @@ main:nth-child(even) {
   .hero button {
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
-    background-color: #fff;
-    color: #1e90ff;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .hero button:hover {
-    background-color: #f0f0f0;
   }
   
   html {
@@ -184,8 +178,8 @@ main:nth-child(even) {
     border: none;
     border-radius: 5px;
     padding: 15px;
-    background: linear-gradient(to right bottom, blue,indigo,violet,darkblue,purple);
+    background: linear-gradient(to right bottom,blue,#1e90ff,#5ab6ff,lightblue,skyblue);
     font-weight: bolder;
-    color: #fff;
+    color: black;
     cursor: pointer;
   }
