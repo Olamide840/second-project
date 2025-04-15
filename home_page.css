@@ -32,13 +32,12 @@
   }
   
   .topic-card {
-    background-color: #fff;
-    color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    font-weight: bolder;
   }
   
   .topic-card:nth-child(1){
@@ -50,7 +49,7 @@
     color: #fff;
   }
   .topic-card:nth-child(3){
-    background: url(safe.png);
+    background: url(safe.jpg);
     color: #fff;
   }
   .topic-card:hover {
