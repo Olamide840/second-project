@@ -288,7 +288,7 @@ let currentQuestion = 0;
     const percent = Math.round((score / questions.length) * 100);
     document.getElementById("score").textContent = `You got ${score} out of ${questions.length} (${percent}%)`;
   
-    localStorage.setItem("phishingScore", score);
+    localStorage.setItem("passwordScore", score);
   }
   
   function goHome() {
