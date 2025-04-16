@@ -9,7 +9,7 @@ function goToModule(module) {
   function updateProgress() {
     const phishing = localStorage.getItem("phishingScore");
     const password = localStorage.getItem("passwordScore");
-    const browsing = localStorage.getItem("browsingScore");
+    const browsing = localStorage.getItem("safeScore");
 
     let completed = 0;
 
