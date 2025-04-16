@@ -1,15 +1,8 @@
-function goToModule(module) {
-    alert("You selected: " + module);
-  }
-  
-  function scrollToModules() {
-    document.getElementById("modules").scrollIntoView({ behavior: "smooth" });
-  }
-
   function updateProgress() {
     const phishing = localStorage.getItem("phishingScore");
     const password = localStorage.getItem("passwordScore");
     const browsing = localStorage.getItem("safeScore");
+    const malware = localStorage.getItem("malwareScore");
 
     let completed = 0;
 
@@ -28,6 +21,10 @@ function goToModule(module) {
       completed++;
     }
 
+    if (malware && malware > 0) {
+      document.getElementById("malware-status").textContent = "✅ Completed";
+      completed++;
+    }
     const percent = (completed / 3) * 100;
     document.getElementById("progress-fill").style.width = percent + "%";
   }
