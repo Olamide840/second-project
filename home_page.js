@@ -25,7 +25,7 @@
       document.getElementById("malware-status").textContent = "✅ Completed";
       completed++;
     }
-    const percent = (completed / 3) * 100;
+    const percent = (completed / 4) * 100;
     document.getElementById("progress-fill").style.width = percent + "%";
   }
 
