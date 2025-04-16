@@ -13,10 +13,13 @@
   }
   
   header {
-    background-color: #1e90ff;
+    background: url(cyb.jpg);
+    background-size: cover;
     color: white;
-    text-align: center;
     padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   main.topics {
@@ -73,11 +76,6 @@
     background-color: #005bb5;
   }
 
-  .hero img {
-    width: 300px;
-    max-width: 100%;
-  }
-  
   .hero-content {
     max-width: 500px;
     display: block;
@@ -93,7 +91,10 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+  .hero a{
+    text-decoration: none;
+    color: #fff;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -189,8 +190,8 @@
     border: none;
     border-radius: 5px;
     padding: 15px;
-    background: linear-gradient(to right bottom,blue,#1e90ff,#5ab6ff,lightblue,skyblue);
+    background: linear-gradient(to right bottom,blue,indigo,#1e90ff,purple,darkblue);
     font-weight: bolder;
-    color: black;
+    color: #fff;
     cursor: pointer;
   }
