@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Browsing</title>
+</head>
+<body>
+    <header class="hero small">
+        <h1>Safe Browsing</h1>
+      </header>
+    
+      <main class="module">
+        <section>
+          <h2>What is Safe Browsing ?</h2>
+          <p>Safe browsing refers to the practice of navigating the internet in a way that minimizes the risk of encountering malicious content like malware, phishing scams, and other online threats. It involves taking precautions and using tools to identify and avoid potentially dangerous websites and online activities. </p>
+        </section>
+    
+        <section>
+          <h2>How to Maintain a safe Browsing:</h2>
+          <ul>
+            <li>Use a combination of uppercase and lowercase letters, numbers, and symbols for each account.</li>
+            <li>Enable 2FA on all accounts that offer it for an extra layer of security.</li>
+            <li>Regularly update your operating system, web browser, and other software to patch security vulnerabilities.</li>
+            <li>Always visit websites with HTTPS (the padlock icon) in the address bar.</li>
+            <li>Consider using a Virtual Private Network (VPN) to encrypt your connection, especially when using public Wi-Fi.</li>
+            <li>Use incognito mode (or private browsing) for more privacy when browsing sensitive information.</li>
+          </ul>
+        </section>
+    
+        <button onclick="startQuiz()">Take Quiz</button>
+      </main>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        body{
+            background-image: url(safe.jpg);
+            background-size: cover;
+            color: #fff;
+            font-family: sans-serif;
+        }
+        header{
+          background: #2196f3;
+          text-align: center;
+          height: 12vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        button{
+            padding: 14px 35px;
+            background: #2196f3;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        button:hover{
+            background: #2196f3;
+            box-shadow: 0 0 50px #2194f3, 0 0 40px #2196f3;
+            scale: 1.05;
+        }
+        main{
+          letter-spacing: 1px;
+          line-height: 35px;
+          margin: 10px;
+        }
+        ul {
+          padding-left: 1.5rem;
+        }
+    
+        li{
+          list-style: disc;
+    
+        }
+    </style>
+      <script>
+        function startQuiz() {
+          window.location.href = 'safe-browsing-quiz.html';
+        }
+      </script>
+</body>
+</html>
