@@ -20,18 +20,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
   }
   
   main.topics {
-    background: #5ab6ff;
+    background: #005bb5;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     gap: 20px;
     color: #333;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
   }
   
   .topic-card {
