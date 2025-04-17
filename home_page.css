@@ -13,7 +13,7 @@
   }
   
   header {
-    background: url(cyb.jpg);
+    background: url(cyber.png);
     background-size: cover;
     color: white;
     padding: 2rem 1rem;
@@ -54,12 +54,17 @@
     background-size: cover;
   }
   .topic-card:nth-child(3){
-    background: url(safe.jpg);
+    background: url(risk.png);
     color: #fff;
     background-size: cover;
   }
   .topic-card:nth-child(4){
     background: url(malware.png);
+    color: #fff;
+    background-size: cover;
+  }
+  .topic-card:nth-child(5){
+    background: url(insider.jpg);
     color: #fff;
     background-size: cover;
   }

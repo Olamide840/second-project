@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malware Awareness</title>
+    <title>Insider Threats</title>
 </head>
 <body>
     <header class="hero small">
-        <h1>Malware Awareness</h1>
+        <h1>Insider Threats.</h1>
       </header>
     
       <main class="module">
         <section>
-          <h2>What is Malware ?</h2>
-          <p>Malware is any software intentionally designed to cause disruption to a computer, server, client, or computer network, leak private information, gain unauthorized access to information or systems, deprive access to information, or which unknowingly interferes with the user's computer security and privacy.</p>
+          <h2>What is an Insider Threats ?</h2>
+          <p>An insider threat is a security risk that arises from within an organization, typically from an employee, contractor, or other authorized individual who has access to sensitive information or systems. This risk can stem from malicious intent, negligence, or even unintentional actions that compromise the organization's security. </p>
         </section>
     
         <section>
-          <h2>How to Spot a Malware:</h2>
+          <h2>How to Spot an Insider Threats:</h2>
           <ul>
-            <li>A sudden and persistent slowdown in device performance can be a sign of malware actively running and consuming resources. </li>
-            <li>Being redirected to unexpected websites, especially those with suspicious content or pop-ups, is a common malware indicator.</li>
-            <li>Unusual changes to your browser's homepage, search engine, or extensions without your permission are red flags. </li>
+            <li>Changes in work patterns: Sudden changes in work hours, unexplained absences, or a decrease in overall productivity. </li>
+            <li>Unusual financial gain or distress: Sudden large purchases or unexplained financial hardships.</li>
+            <li>Excessive data access or downloads: Downloading or accessing unusually large amounts of data. </li>
+            <li>Unusual logon activity: Logging in outside of usual hours or from unusual locations. </li>
+            <li>Use of unauthorized software or hardware: Installing unapproved software or using personal devices without permission. </li>
           </ul>
-          <h2>Prevention against Malware:</h2>
           <ul>
-            <li>Install and regularly update reputable antivirus software and run scans to detect and remove malware. </li>
-            <li>Avoid clicking on links or opening attachments in emails from unknown senders, especially those that seem urgent or suspicious. </li>
-            <li>Keep your operating system, browsers, and other software up to date to patch known vulnerabilities. </li>
+            <h2>Prevention:</h2>
+            <li>Establish clear, enforceable policies regarding data access, acceptable use, and security protocols. </li>
+            <li>Use the principle of least privilege, granting users only the access necessary for their roles. (RBAC)</li>
+            <li>Consider using user and entity behavior analytics (UEBA) to identify and prevent insider threats. </li>
           </ul>
         </section>
     
@@ -40,7 +42,7 @@
         box-sizing: border-box;
       }
         body{
-            background-image: url(malware.png);
+            background-image: url(insider.jpg);
             background-size: cover;
             color: #fff;
             font-family: sans-serif;
@@ -84,7 +86,7 @@
     </style>
       <script>
         function startQuiz() {
-          window.location.href = 'malware-quiz.html';
+          window.location.href = 'insider-quiz.html';
         }
       </script>
 </body>

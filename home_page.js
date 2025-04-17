@@ -3,6 +3,7 @@
     const password = localStorage.getItem("passwordScore");
     const browsing = localStorage.getItem("safeScore");
     const malware = localStorage.getItem("malwareScore");
+    const insider = localStorage.getItem("insiderScore");
 
     let completed = 0;
 
@@ -25,7 +26,12 @@
       document.getElementById("malware-status").textContent = "✅ Completed";
       completed++;
     }
-    const percent = (completed / 4) * 100;
+
+    if (insider && insider > 0) {
+      document.getElementById("insider-status").textContent = "✅ Completed";
+      completed++;
+    }
+    const percent = (completed / 5) * 100;
     document.getElementById("progress-fill").style.width = percent + "%";
   }
 
