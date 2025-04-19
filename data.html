@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Protection</title>
+</head>
+<body>
+    <header class="hero small">
+        <h1>Password Safety Awareness</h1>
+    </header>
+    <main class="module">
+        <section>
+          <h2>What is Data Protection and Privacy ?</h2>
+          <p>Data protection and privacy are related but distinct concepts. Data protection focuses on safeguarding information from damage, loss, or unauthorized access, while data privacy emphasizes an individual's right to control their personal information. In essence, data protection ensures the integrity and availability of data, while data privacy concerns who can access and use that data. </p>
+        </section>
+    
+        <section>
+          <h2>How to Ensure Data Protection and Privacy:</h2>
+          <ul>
+            <li>Encrypting data at rest and in transit is crucial for protecting it from unauthorized access. </li>
+            <li>Using strong authentication methods, like multi-factor authentication, helps prevent unauthorized access. </li>
+            <li>Regularly backing up data and having a robust recovery plan in place is essential for disaster recovery and data availability. </li>
+            <li>Techniques like tokenization and pseudonymization can further protect sensitive data, especially when shared. </li>
+            <li>Adopting a Zero Trust approach assumes that threats can come from inside or outside the network, continuously verifying user and device identities. </li>
+          </ul>
+        </section>
+    
+        <button onclick="startQuiz()">Take Quiz</button>
+      </main>
+      <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+          body{
+              background-image: url(data.jpg);
+              background-repeat: no-repeat;
+              color: #fff;
+              font-family: sans-serif;
+              background-size: cover;
+              font-weight: bolder;
+          }
+          header{
+            background: #2196f3;
+            text-align: center;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          button{
+              padding: 14px 35px;
+              background: #2196f3;
+              cursor: pointer;
+              transition: .4s ease-in-out;
+              border: none;
+              border-radius: 5px;
+              color: #fff;
+          }
+          button:hover{
+              background: #2196f3;
+              box-shadow: 0 0 50px #2194f3, 0 0 40px #2196f3;
+              scale: 1.05;
+          }
+          main{
+            letter-spacing: 1px;
+            line-height: 35px;
+            margin: 10px;
+          }
+          ul {
+            padding-left: 1.5rem;
+          }
+      
+          li{
+            list-style: disc;
+      
+          }
+      </style>
+        <script>
+          function startQuiz() {
+            window.location.href = 'data-quiz.html';
+          }
+        </script>      
+</body>
+</html>
