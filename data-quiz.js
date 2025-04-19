@@ -97,6 +97,7 @@ const questions = [
             "Implementing multi-factor authentication",
             "Disabling fire walls"
         ],
+        answer: 2
     },
     {
         question: "What is the main goal of data protection?",
