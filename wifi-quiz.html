@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-fi Snooping Quiz</title>
+    <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+    <header class="hero small">
+        <h1>Wi-fi Snooping Quiz</h1>
+      </header>
+    
+      <main class="quiz-container">
+        <div id="quiz-box">
+          <h2 id="question"></h2>
+          <div id="options"></div>
+          <button onclick="nextQuestion()">Next</button>
+        </div>
+    
+        <div id="result-box" style="display:none;">
+          <h2>Your Score: <span id="score"></span></h2>
+          <button onclick="goHome()">Back to Home</button>
+        </div>
+      </main>
+    
+      <script src="wifi-quiz.js"></script>
+      <style>
+        body{
+          background-image: url(datas.png);
+          background-size: cover;
+        }
+        header{
+          background-image: url(datas.jpg);
+          border-radius: 50px/20px/30px;
+        }
+        button{
+          padding: 10px 35px;
+          background: #ccc;
+          border-radius: 5px;
+          color: black;
+          border: none; 
+          cursor: pointer;
+          transition: .3s ease-in-out;
+      }
+      button:hover{
+        background-color: darkgrey;
+        color: white;
+      }
+      </style>
+</body>
+</html>

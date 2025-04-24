@@ -5,6 +5,7 @@
     const malware = localStorage.getItem("malwareScore");
     const insider = localStorage.getItem("insiderScore");
     const data = localStorage.getItem("dataScore");
+    const wifi = localStorage.getItem("wifiScore");
 
     let completed = 0;
 
@@ -37,7 +38,12 @@
       document.getElementById("data-status").textContent = "✅ Completed";
       completed++;
     }
-    const percent = (completed / 6) * 100;
+
+    if (wifi && wifi > 0) {
+      document.getElementById("wifi-status").textContent = "✅ Completed";
+      completed++;
+    }
+    const percent = (completed / 7) * 100;
     document.getElementById("progress-fill").style.width = percent + "%";
   }
 

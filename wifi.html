@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI SNOOPING</title>
+</head>
+<body>
+    <header class="hero small">
+        <h1>Wi-fi Snooping</h1>
+      </header>
+    
+      <main class="module">
+        <section>
+          <h2>What is Wi-fi Snooping ?</h2>
+          <p>Wi-Fi snooping, also known as network eavesdropping or sniffing, is a security vulnerability where attackers intercept and monitor data transmitted over a Wi-Fi network. This unauthorized access allows them to potentially steal sensitive information like passwords, credit card details, or other confidential data. </p>
+        </section>
+    
+        <section>
+          <h2>Causes:</h2>
+          <ul>
+            <li>Using Public Wi-Fi Without Protection</li>
+            <li>Fake Hotspots (Evil Twin Attacks)</li>
+            <li>Weak Wi-Fi Password</li>
+            <li>Outdated Routed Firmware</li>
+            <li>Lack of Encryption</li>
+          </ul>
+          <h2>Prevention:</h2>
+          <ul>
+            <li>Use a VPN (Virtual Private Network)</li>
+            <li>Connect Only to Secure Networks</li>
+          </ul>
+        </section>
+    
+        <button onclick="startQuiz()">Take Quiz</button>
+      </main>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        body{
+            background-image: url(wifis.png);
+            background-size: cover;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        header{
+          background: #2196f3;
+          text-align: center;
+          height: 12vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        button{
+            padding: 14px 35px;
+            background: #2196f3;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        button:hover{
+            background: #2196f3;
+            box-shadow: 0 0 50px #2194f3, 0 0 40px #2196f3;
+            scale: 1.05;
+        }
+        main{
+          letter-spacing: 1px;
+          line-height: 35px;
+          margin: 10px;
+        }
+        ul {
+          padding-left: 1.5rem;
+        }
+    </style>
+      <script>
+        function startQuiz() {
+          window.location.href = 'wifi-quiz.html';
+        }
+      </script>
+</body>
+</html>
