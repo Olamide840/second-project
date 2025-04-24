@@ -18,7 +18,7 @@
           <button onclick="nextQuestion()">Next</button>
         </div>
     
-        <div id="result-box" style="display:none;">
+        <div id="result-box" style="display:none; color: #fff;">
           <h2>Your Score: <span id="score"></span></h2>
           <button onclick="goHome()">Back to Home</button>
         </div>
@@ -27,11 +27,15 @@
       <script src="wifi-quiz.js"></script>
       <style>
         body{
-          background-image: url(datas.png);
+          background-image: url(anon.jpeg);
           background-size: cover;
         }
+        #question{
+          color: #fff;
+          font-weight: bolder;
+        }
         header{
-          background-image: url(datas.jpg);
+          background-image: url(anon.jpeg);
           border-radius: 50px/20px/30px;
         }
         button{
@@ -45,7 +49,7 @@
       }
       button:hover{
         background-color: darkgrey;
-        color: white;
+        color: #fff;
       }
       </style>
 </body>

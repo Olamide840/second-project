@@ -49,12 +49,12 @@
     color: #fff;
   }
   .topic-card:nth-child(2){
-    background: url(cracker.png);
+    background: url(name.jpeg);
     color: #fff;
     background-size: cover;
   }
   .topic-card:nth-child(3){
-    background: url(risk.png);
+    background: url(app.jpeg);
     color: #fff;
     background-size: cover;
   }
