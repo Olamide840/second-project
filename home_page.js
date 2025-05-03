@@ -1,3 +1,27 @@
+  const tips = [
+    "Tip: Never Share your Password via Unverified/illegitimate Email",
+    "Tip: Do not use the same username and password for all your accounts",
+    "Tip: Do not click on suspicious links",
+    "Tip: Enable two fator authentication or a MFA",
+    "Tip: Use a RBAC for implementing employees access",
+    "Tip: Regularly BackUp your data",
+    "Tip: Use a VPN on public wifi",
+    "Tip: Use a Behavioral analytics",
+    "Tip: Use Strong Encryption",
+    "Tip: Use anti-virus software",
+  ];
+  let index = 0;
+  const tipText = document.getElementById("tip-text");
+  setInterval(() => {
+    index = (index + 1) % tips.length;
+    tipText.style.opacity = 0.5;
+    setTimeout(() => {
+      tipText.textContent = tips[index];
+      tipText.style.opacity = 1;
+      tipText.style.fontWeight = bolder;
+    }, 500);
+  }, 4000);
+  
   function updateProgress() {
     const phishing = localStorage.getItem("phishingScore");
     const password = localStorage.getItem("passwordScore");

@@ -22,7 +22,26 @@
     align-items: center;
     font-weight: bolder;
   }
-  main.topics {
+  .cyb-tips{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+    color: #eee;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .tip-box{
+    background: #1e90ff;
+    padding: 20px;
+    font-size: 1.2rem;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+    main.topics {
     background: #005bb5;
     padding: 40px 20px;
     border-radius: 10px;
