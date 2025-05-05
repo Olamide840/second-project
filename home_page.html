@@ -4,91 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cybersecurity Awareness</title>
-  <link rel="stylesheet" href="home_page.css" />
+  <link rel="stylesheet" href="home_page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Cybersecurity Awareness</h1>
-      <p>Learn how to protect yourself online with interactive lessons and fun quizzes.</p>
-      <button><a href="landing_page.html">GET STARTED</a></button>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Cybersecurity Awareness</h1>
+        <p>Learn how to protect yourself online with interactive lessons and fun quizzes.</p>
+        <button><a href="landing_page.html">GET STARTED</a></button>
+      </div>
+    </header>
+
+    <div class="theme-switch">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      <span id="mode-text">Night Mode</span>
     </div>
-  </header>
 
-  <section class="cyb-tips">
-    <h2>Cybersecurity Tips</h2>
-    <div class="tip-box" id="tip-box">
-      <p id="tip-text">Tip: Never share your Password via unverified/illegitimate Email.</p>
-    </div>
-  </section>
-
-  <main class="topics">
-    <section class="topic-card">
-      <h2>Phishing</h2>
-      <p>Learn how to identify and avoid phishing attacks.</p>
-      <a href="phishing.html" class="btn">Start Learning</a>
+    <section class="cyb-tips">
+      <h2>Cybersecurity Tips</h2>
+      <div class="tip-box" id="tip-box">
+        <p id="tip-text">Tip: Never share your Password via unverified/illegitimate Email.</p>
+      </div>
     </section>
 
-    <section class="topic-card">
-      <h2>Password Safety</h2>
-      <p>Understand how to create and manage strong passwords.</p>
-      <a href="password.html" class="btn">Start Learning</a>
-    </section>
-  
-    <section class="topic-card">
-      <h2>Safe Browsing</h2>
-      <p>Browse the internet safely by learning smart habits.</p>
-      <a href="safe-browsing.html" class="btn">Start Learning</a>
-    </section>
+    <main class="topics">
+      <section class="topic-card">
+        <h2>Phishing</h2>
+        <p>Learn how to identify and avoid phishing attacks.</p>
+        <a href="phishing.html" class="btn">Start Learning</a>
+      </section>
 
-    <section class="topic-card">
-      <h2>Malware</h2>
-      <p>Understand how to be safe from Malicious Software.</p>
-      <a href="malware.html" class="btn">Start Learning</a>
-    </section>
+      <section class="topic-card">
+        <h2>Password Safety</h2>
+        <p>Understand how to create and manage strong passwords.</p>
+        <a href="password.html" class="btn">Start Learning</a>
+      </section>
 
-    <section class="topic-card">
-      <h2>Insider Threats</h2>
-      <p>Understand how to avoid Insider Threats.</p>
-      <a href="insider.html" class="btn">Start Learning</a>
-    </section>
+      <section class="topic-card">
+        <h2>Safe Browsing</h2>
+        <p>Browse the internet safely by learning smart habits.</p>
+        <a href="safe-browsing.html" class="btn">Start Learning</a>
+      </section>
 
-    
-    <section class="topic-card">
-      <h2>Data Protection and Privacy</h2>
-      <p>Learn how to protect your personal data on the internet.</p>
-      <a href="data.html" class="btn">Start Learning</a>
-    </section>
+      <section class="topic-card">
+        <h2>Malware</h2>
+        <p>Understand how to be safe from Malicious Software.</p>
+        <a href="malware.html" class="btn">Start Learning</a>
+      </section>
 
-    <section class="topic-card">
-      <h2>Wi-fi Snooping</h2>
-      <p>Learn how to protect your device from an attack through Wi-fi.</p>
-      <a href="wifi.html" class="btn">Start Learning</a>
-    </section>
-  </main>
-  
-  <section class="progress-section">
-    <h2>Your Progress</h2>
-    <div class="progress-bar">
-      <div id="progress-fill"></div>
-    </div>
-    <ul class="module-status">
-      <li>Phishing: <span id="phishing-status">❌ Not Completed</span></li>
-      <li>Password Safety: <span id="password-status">❌ Not Completed</span></li>
-      <li>Safe Browsing: <span id="browsing-status">❌ Not Completed</span></li>
-      <li>Malware: <span id="malware-status">❌ Not Completed</span></li> 
-      <li>Insider Threats: <span id="insider-status">❌ Not Completed</span></li>
-      <li>Data Protection and Privacy: <span id="data-status">❌ Not Completed</span></li>
-      <li>Wi-fi Snooping: <span id="wifi-status">❌ Not Completed</span></li>
-      <button onclick="localStorage.clear(); location.reload();">Reset Progress</button>
+      <section class="topic-card">
+        <h2>Insider Threats</h2>
+        <p>Understand how to avoid Insider Threats.</p>
+        <a href="insider.html" class="btn">Start Learning</a>
+      </section>
 
-    </ul>
-  </section>
-  
+      <section class="topic-card">
+        <h2>Data Protection and Privacy</h2>
+        <p>Learn how to protect your personal data on the internet.</p>
+        <a href="data.html" class="btn">Start Learning</a>
+      </section>
+
+      <section class="topic-card">
+        <h2>Wi-fi Snooping</h2>
+        <p>Learn how to protect your device from an attack through Wi-fi.</p>
+        <a href="wifi.html" class="btn">Start Learning</a>
+      </section>
+    </main>
+
+    <section class="progress-section">
+      <h2>Your Progress</h2>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <ul class="module-status">
+        <li>Phishing: <span id="phishing-status">❌ Not Completed</span></li>
+        <li>Password Safety: <span id="password-status">❌ Not Completed</span></li>
+        <li>Safe Browsing: <span id="browsing-status">❌ Not Completed</span></li>
+        <li>Malware: <span id="malware-status">❌ Not Completed</span></li>
+        <li>Insider Threats: <span id="insider-status">❌ Not Completed</span></li>
+        <li>Data Protection and Privacy: <span id="data-status">❌ Not Completed</span></li>
+        <li>Wi-fi Snooping: <span id="wifi-status">❌ Not Completed</span></li>
+        <button onclick="localStorage.clear(); location.reload();">Reset Progress</button>
+      </ul>
+    </section>
+  </div>
   <footer>
     <p>&copy; 2025 Cybersecurity Awareness</p>
   </footer>
-
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+    if (themeToggle) {
+      themeToggle.addEventListener("change", function () {
+        document.body.classList.toggle("light-mode");
+      });
+    }
+  </script>
   <script src="home_page.js"></script>
 </body>
 </html>
