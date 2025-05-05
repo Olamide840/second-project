@@ -299,6 +299,38 @@
     letter-spacing: 1.5px;
     font-family: 'Inter', sans-serif;
   }
+  .real-world{
+    background: #fff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
+  .real-world h2{
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .real-world p{
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+  }
+  
+  .explore{
+    background-color: #0078D7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .explore:hover {
+    background-color: #005bb5;
+  }
   
   button{
     border: none;
