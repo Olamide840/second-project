@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="auth1.css">
+</head>
+<body>
+    <div class="theme-switch">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <span id="mode-text">Dark Mode</span>
+    </div>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="auth.html">Sign Up</a> or <a href="aupassword.html">Forgoteen Password ?</a></p>
+        <div class="divider">
+            <span>or login with</span>
+        </div>
+        <div class="logos">
+            <a href="https://www.instagram.com/accounts/login/"><i class='bx bxl-instagram' id="ig"></i></a>
+            <a href="https://www.facebook.com/login"><i class='bx bxl-facebook' id="fb"></i></a>
+            <a href="https://accounts.google.com/sigin"><i class='bx bxl-google' id="google"></i></a>
+            <a href="https://twitter.com/login"><i class='bx bxl-twitter' id="x"></i></a>
+        </div>
+    </div>
+</body>
+<script src="auth.js"></script>
+</html>
