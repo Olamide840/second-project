@@ -1,0 +1,38 @@
+body{
+    background: #ddd;
+}
+.cyber-intro {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background: linear-gradient(to bottom, #eaf6ff, #ffffff);
+    color: #333;
+  }
+  .cyber-intro h1 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  .cyber-intro h2 {
+    font-size: 1.8rem;
+    color: #005792;
+    margin-top: 40px;
+  }
+  .cyber-intro p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .cyber-intro ul {
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  .cyber-intro li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  button a{
+    text-decoration: none;
+    padding: 40px 20px;
+  }

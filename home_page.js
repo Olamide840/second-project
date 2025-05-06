@@ -22,6 +22,8 @@
     }, 500);
   }, 4000);
   
+
+  
   function updateProgress() {
     const phishing = localStorage.getItem("phishingScore");
     const password = localStorage.getItem("passwordScore");
