@@ -1,5 +1,7 @@
 body{
     background: #ddd;
+    margin: 0px;
+    padding: 0px;
 }
 .cyber-intro {
     padding: 50px 20px;
@@ -10,10 +12,20 @@ body{
     background: linear-gradient(to bottom, #eaf6ff, #ffffff);
     color: #333;
   }
-  .cyber-intro h1 {
-    font-size: 2.5rem;
-    color: #1e90ff;
+  .title{
+    font-size: 1.9rem;
     margin-bottom: 20px;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: relative;
+    padding: 2rem 1rem;
+    letter-spacing: 1px;
+    bottom: 13px;
+    color: #222;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
   }
   .cyber-intro h2 {
     font-size: 1.8rem;
@@ -33,12 +45,14 @@ body{
     font-size: 1.05rem;
   }
   button{
-    padding: 10px 20px;
+    padding: 15px 23px;
     background: #005792;
-    border: none;
     border-radius: 5px;
     transition: 0.4s ease;
     cursor: pointer;
+    border: none;
+    border-left: 4.5px solid darkred;
+    font-weight: bolder;
   }
   button:hover{
     background: #1e90ff;
