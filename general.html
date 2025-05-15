@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <h1 class="title">Welcome to Cybersecurity Awareness</h1>
@@ -59,9 +60,62 @@
             Organizations, governments, schools, and individuals must all take responsibility for staying cyber aware and safe.
           </p>
         </section>
+        <button><a href="home_page.html">LET'S LEARN</a></button>
 
-        <button><a href="home_page.html">LET'S GO</a></button>
+        <section class="cyb-stats">
+          <h2>Cybersecurity Facts</h2>
+          <div class="stats-container">
+            <div class="stat-card">
+              <i class="fas fa-user-shield fa-2x"></i>
+              <h3 class="count" data-target="95">0</h3>
+              <p>% of breaches caused by human errors</p>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-lock fa-2x"></i>
+              <h3 class="count" data-target="30">0</h3>
+              <p>% of users use strong passwords</p>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-envelope-open-text fa-2x"></i>
+              <h3 class="count" data-target="3400">0</h3>
+              <p>Million Phishing emails sent daily</p>
+            </div>
+          </div>
+        </section>
       </main>
       
+
+<script>
+  const counts = document.querySelectorAll('.count');
+  let triggered = false;
+
+  function countUp() {
+    if (triggered) return;
+    triggered = true;
+  
+  counts.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increase = target / 100;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increase);
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+   });
+  } 
+  window.addEventListener('scroll', () => {
+    const stats = document.querySelector('.cyb-stats');
+    const section = stats.offsetTop - window.innerHeight + 100;
+    if (window.scrollY > section) {
+      countUp();
+    }
+  });
+</script>      
 </body>
 </html>
